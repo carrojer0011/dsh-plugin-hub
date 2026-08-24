@@ -119,6 +119,7 @@
   html += "<div class=\"detail-actions\">"
     + "<button class=\"btn primary\" data-copy=\"" + esc(install) + "\">📋 复制安装链接</button>"
     + "<a class=\"btn\" href=\"" + esc(p.url) + "\" target=\"_blank\" rel=\"noopener\">下载地址 ↗ GitHub</a>"
+    + "<button class=\"btn fav-btn\" data-fav=\"" + esc(p.id) + "\">" + (window.__DSH_FAV__ && window.__DSH_FAV__.has(p.id) ? "⭐ 已收藏" : "☆ 收藏") + "</button>"
     + "</div>";
 
   html += "<div class=\"install-cmd\">" + esc(install) + "</div>";
@@ -139,6 +140,15 @@
   box.innerHTML = "<div class=\"detail-card\">" + html + "</div>";
 
   document.addEventListener("click", function (e) {
+    var fav = e.target.closest("[data-fav]");
+    if (fav) {
+      var fid = fav.getAttribute("data-fav");
+      if (window.__DSH_FAV__) {
+        var on = window.__DSH_FAV__.toggle(fid);
+        fav.textContent = on ? "⭐ 已收藏" : "☆ 收藏";
+      }
+      return;
+    }
     var copy = e.target.closest("[data-copy]");
     if (!copy) return;
     var cmd = copy.getAttribute("data-copy");

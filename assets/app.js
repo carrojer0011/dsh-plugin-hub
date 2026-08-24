@@ -13,7 +13,7 @@
   var catMap = {};
   categories.forEach(function (c) { catMap[c.key] = c; });
 
-  var state = { query: "", tags: [], category: "all", sort: "rank", showAllTags: false };
+  var state = { query: "", tags: [], category: "all", sort: "rank", showAllTags: false, fav: false };
   var HOT_COUNT = 8;
 
   // ---- 计算 ----
@@ -71,6 +71,7 @@
 
   function matches(p) {
     if (state.category !== "all" && p.category !== state.category) return false;
+    if (state.fav && window.__DSH_FAV__ && !window.__DSH_FAV__.has(p.id)) return false;
     if (state.tags.length) {
       for (var i = 0; i < state.tags.length; i++) {
         if ((p.tags || []).indexOf(state.tags[i]) < 0) return false;
@@ -179,6 +180,7 @@
       + "<div><h3 class=\"card-title\"><a href=\"" + esc(detailUrl) + "\">" + esc(p.name) + "</a></h3>"
       + "<div class=\"card-cat\">" + esc(catLabel(p.category)) + " · " + esc(p.repo) + "</div></div>"
       + "<span class=\"star-badge\">⭐ " + fmt(p.stars) + "</span>"
+      + "<button class=\"fav-btn\" data-fav=\"" + esc(p.id) + "\" title=\"收藏\">" + (window.__DSH_FAV__ && window.__DSH_FAV__.has(p.id) ? "⭐" : "☆") + "</button>"
       + "</div>"
       + metaHtml(p)
       + "<p class=\"card-desc\">" + esc(p.description) + "</p>"
@@ -283,6 +285,14 @@
     el.innerHTML = html;
   }
 
+  function updateFavToggle() {
+    var btn = document.getElementById("fav-toggle");
+    if (!btn) return;
+    var n = window.__DSH_FAV__ ? window.__DSH_FAV__.count() : 0;
+    btn.textContent = (state.fav ? "⭐ 只看收藏" : "⭐ 收藏") + (n ? " (" + n + ")" : "");
+    if (state.fav) btn.classList.add("active"); else btn.classList.remove("active");
+  }
+
   function render() {
     renderHero();
     renderMustInstall();
@@ -290,6 +300,7 @@
     renderPanel();
     renderList();
     renderFooter();
+    updateFavToggle();
   }
 
   // ---- 事件 ----
@@ -315,6 +326,11 @@
       renderPanel();
       renderList();
     });
+    document.getElementById("fav-toggle").addEventListener("click", function () {
+      state.fav = !state.fav;
+      updateFavToggle();
+      renderList();
+    });
 
     document.addEventListener("click", function (e) {
       var chip = e.target.closest("[data-tag]");
@@ -337,6 +353,17 @@
         } else {
           window.prompt("复制安装命令：", cmd);
         }
+        return;
+      }
+      var favBtn = e.target.closest("[data-fav]");
+      if (favBtn) {
+        var fid = favBtn.getAttribute("data-fav");
+        if (window.__DSH_FAV__) {
+          var favOn = window.__DSH_FAV__.toggle(fid);
+          favBtn.textContent = favOn ? "⭐" : "☆";
+        }
+        renderList();
+        updateFavToggle();
         return;
       }
       var head = e.target.closest(".tag-section-head");

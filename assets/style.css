@@ -370,3 +370,10 @@ select:focus { border-color: var(--accent); }
 .related-name { font-size: 14px; font-weight: 600; color: var(--text); }
 .related-meta { font-size: 12px; color: var(--text-faint); }
 
+/* 收藏 */
+.fav-btn { font-size: 15px; line-height: 1; background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 5px 8px; cursor: pointer; color: var(--star); }
+.fav-btn:hover { border-color: var(--star); }
+.fav-toggle { font-size: 14px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--panel-2); color: var(--text-dim); cursor: pointer; transition: all .15s; white-space: nowrap; }
+.fav-toggle.active { background: var(--star); border-color: var(--star); color: #fff; }
+.fav-toggle:hover { border-color: var(--accent); }
+
