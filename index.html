@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSH 插件库 · 收录与评价</title>
+  <meta name="description" content="DeepSeek Harness (DSH) 插件收录与评价：按 star 数与能力匹配度排序，动态能力标签，热门标签，新手必装推荐，数据每日更新。" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="logo">🐋</span>
+        <span class="brand-name">DSH 插件库</span>
+      </a>
+      <nav class="nav">
+        <a href="#must-install">新手必装</a>
+        <a href="#search-panel">插件目录</a>
+        <a class="source-link" href="https://github.com/topics/dsh-plugin" target="_blank" rel="noopener">GitHub 数据源 ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero wrap" id="top">
+    <div class="hero-badge">🐋 DeepSeek Harness 插件生态导航</div>
+    <h2 class="hero-title">DSH 插件库</h2>
+    <p class="hero-subtitle">收录 · 评价 · 发现 DeepSeek Harness 社区插件</p>
+    <p class="hero-desc">
+      一站式查询 GitHub 上的 DeepSeek Harness（DSH）社区插件：为每个插件按能力赋予标签并标注 star 数，
+      按「star 数 + 能力匹配度」综合排序；只提供下载地址、不下载插件本体；设「新手必装」精选与热门标签，数据每日自动更新。
+    </p>
+    <div class="hero-stats" id="hero-stats"></div>
+  </section>
+
+  <section id="must-install" class="must-install wrap"></section>
+
+  <main class="wrap">
+    <div class="search-panel" id="search-panel">
+      <div class="search-row">
+        <div class="search-box">
+          <span class="search-icon">🔎</span>
+          <input id="search" type="search" placeholder="搜索插件名 / 功能 / 标签，如：视觉、记忆、TUI、OCR…" autocomplete="off" />
+        </div>
+        <div class="controls">
+          <select id="sort" title="排序方式">
+            <option value="rank">综合排序</option>
+            <option value="stars">⭐ Star 最多</option>
+            <option value="match">🎯 匹配度最高</option>
+          </select>
+          <select id="category" title="按分类筛选">
+            <option value="all">全部分类</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tag-row">
+        <span class="tag-row-label hot-label">🔥 热门</span>
+        <div id="hot-tags" class="tags"></div>
+        <button id="toggle-tags" class="toggle-btn" type="button">全部标签 ▾</button>
+      </div>
+
+      <div class="tag-row" id="all-tags-row" style="display:none">
+        <span class="tag-row-label">全部</span>
+        <div id="all-tags" class="tags"></div>
+      </div>
+
+      <div class="tag-row selected-row" id="selected-row" style="display:none">
+        <span class="tag-row-label">已选</span>
+        <div id="selected-tags" class="tags"></div>
+        <button id="clear-tags" class="clear-btn" type="button">清空</button>
+      </div>
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div id="list" class="sections"></div>
+    <div id="empty" class="empty" style="display:none">
+      <div class="empty-icon">🫧</div>
+      <p>没有匹配的插件，试试换个关键词或清空标签。</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap" id="footer-info"></div>
+  </footer>
+
+  <script src="data/plugins.bundle.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "dsh-plugin-hub",
+  "version": "1.0.0",
+  "description": "DSH 插件收录与评价网站 — 按 star 与能力匹配度排序，动态标签，每日更新",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sync": "node scripts/sync-stars.mjs",
+    "serve": "npx serve ."
+  }
+}
