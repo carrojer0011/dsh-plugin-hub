@@ -36,6 +36,24 @@
     <div class="hero-stats" id="hero-stats"></div>
   </section>
 
+  <section class="ai-pick wrap" id="ai-pick">
+    <div class="ai-card">
+      <div class="ai-head">
+        <span class="ai-icon">🤖</span>
+        <div>
+          <h2>智能选型</h2>
+          <p>描述你的需求，AI 帮你推荐最匹配的插件</p>
+        </div>
+      </div>
+      <div class="ai-input-row">
+        <input id="ai-query" type="text" placeholder="例如：我想给纯文本模型加看图能力 / 帮我管理长期记忆 / 联网搜索…" autocomplete="off" />
+        <button id="ai-go" type="button">推荐</button>
+      </div>
+      <div id="ai-tags" class="ai-tags"></div>
+      <div id="ai-result" class="ai-result"></div>
+    </div>
+  </section>
+
   <section id="must-install" class="must-install wrap"></section>
 
   <main class="wrap">

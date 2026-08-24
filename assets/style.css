@@ -382,3 +382,22 @@ select:focus { border-color: var(--accent); }
 .giscus-wrap h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; }
 .giscus { min-height: 200px; }
 
+/* 智能选型 */
+.ai-pick { padding: 4px 20px 0; }
+.ai-card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-sm); }
+.ai-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.ai-icon { font-size: 30px; }
+.ai-head h2 { margin: 0; font-size: 18px; }
+.ai-head p { margin: 0; font-size: 13px; color: var(--text-faint); }
+.ai-input-row { display: flex; gap: 10px; }
+.ai-input-row input { flex: 1; padding: 12px 16px; font-size: 15px; color: var(--text); background: var(--panel-2); border: 1px solid var(--border); border-radius: 12px; outline: none; transition: all .15s; }
+.ai-input-row input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(77,107,254,.14); background: var(--panel); }
+.ai-input-row button { padding: 12px 24px; font-size: 15px; font-weight: 600; color: #fff; background: var(--accent); border: none; border-radius: 12px; cursor: pointer; transition: all .15s; }
+.ai-input-row button:hover { background: var(--accent-dark); }
+.ai-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.ai-label { font-size: 13px; color: var(--text-faint); }
+.ai-result { margin-top: 14px; }
+.ai-summary { font-size: 13px; color: var(--text-dim); margin-bottom: 2px; }
+.ai-empty { padding: 18px; text-align: center; color: var(--text-faint); }
+.ai-result .list { padding-top: 8px; }
+

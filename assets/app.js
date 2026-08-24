@@ -13,8 +13,39 @@
   var catMap = {};
   categories.forEach(function (c) { catMap[c.key] = c; });
 
-  var state = { query: "", tags: [], category: "all", sort: "rank", showAllTags: false, fav: false };
+  var state = { query: "", tags: [], category: "all", sort: "rank", showAllTags: false, fav: false, aiQuery: "" };
   var HOT_COUNT = 8;
+
+  // 智能选型：能力标签 -> 同义表达（中英）
+  var AI_ALIASES = {
+    "视觉": ["看图", "视觉", "图像", "图片", "ocr", "识图", "识别图片", "截图", "截图理解", "图像理解", "多模态", "vision", "image", "screenshot", "像素", "看得见"],
+    "记忆": ["记忆", "长期记忆", "记住", "上下文记忆", "持久记忆", "知识库", "知识图谱", "memory", "remember", "knowledge", "回忆", "记忆管理", "不要忘"],
+    "自进化": ["自进化", "自我进化", "进化", "自我学习", "self-evolving", "自我改进", "越用越聪明"],
+    "上下文": ["上下文", "上下文管理", "上下文压缩", "上下文洞察", "context", "上下文优化", "语境"],
+    "编码": ["编码", "终端", "命令行", "cli", "tui", "编程", "写代码", "coding", "terminal", "code", "代码"],
+    "桌面端": ["桌面", "桌面端", "gui", "客户端", "desktop", "桌面应用", "图形界面"],
+    "搜索": ["搜索", "联网", "网络搜索", "查资料", "检索", "search", "web", "谷歌", "百度", "研究", "research", "找资料", "上网"],
+    "浏览器": ["浏览器", "browser", "浏览器自动化", "操控浏览器", "网页", "chrome", "登录态"],
+    "文件": ["文件", "文件管理", "文件浏览", "文件系统", "虚拟文件系统", "file", "文件管理器", "目录"],
+    "设计": ["设计", "ui", "原型", "界面设计", "落地页", "ppt", "设计稿", "design", "prototype", "美观", "前端", "海报"],
+    "图表": ["图表", "架构图", "流程图", "时序图", "diagram", "可视化", "数据流图", "示意图"],
+    "视频": ["视频", "视频生成", "视频制作", "video", "短视频", "影片", "解说视频"],
+    "图像": ["图像生成", "图片生成", "文生图", "生成图片", "绘画", "提示词", "image generation", "生成图", "画图"],
+    "技能": ["技能", "技能库", "技能管理", "skill", "技能编排", "技能路由", "能力包"],
+    "任务": ["任务", "看板", "任务管理", "task", "工作流", "待办", "进度", "任务看板"],
+    "多代理": ["多代理", "多agent", "子代理", "团队协作", "multi-agent", "多智能体", "派发", "多个agent"],
+    "侧边栏": ["侧边栏", "sidebar", "面板", "批注", "git面板", "终端面板", "边栏"],
+    "皮肤": ["皮肤", "主题", "壁纸", "换肤", "theme", "skin", "外观", "美化", "颜值", "好看"],
+    "多模型": ["多模型", "模型切换", "模型管理", "供应商", "provider", "网关", "模型", "切换模型", "订阅"],
+    "通讯": ["通讯", "im", "飞书", "微信", "钉钉", "qq", "slack", "telegram", "机器人", "消息", "discord", "whatsapp"],
+    "后端": ["后端", "云", "数据库", "云函数", "backend", "cloud", "database", "认证", "数据", "存储"],
+    "安全": ["安全", "审计", "防护", "防注入", "security", "渗透", "恶意", "密钥", "防护", "杀毒"],
+    "市场": ["市场", "安装", "插件市场", "管理插件", "marketplace", "安装管理", "发现插件", "安装插件", "装插件"],
+    "移动端": ["移动", "手机", "移动端", "mobile", "远程", "扫码", "掌上", "口袋"],
+    "桌宠": ["桌宠", "桌面宠物", "宠物", "pet", "陪伴", "伙伴", "动物", "养成"],
+    "趣味": ["趣味", "恶搞", "娱乐", "fun", "门户", "整活", "好玩"],
+    "教程": ["教程", "文档", "手册", "学习", "入门", "tutorial", "guide", "指南", "资料", "从零"],
+  };
 
   // ---- 计算 ----
   var maxStars = 1;
@@ -267,6 +298,51 @@
       + "<span>安装第三方插件会在本机执行代码，请先审阅源码</span>";
   }
 
+  function aiMatch(query) {
+    var q = (query || "").toLowerCase();
+    if (!q) return { tags: [], results: [] };
+    var tagHits = {};
+    Object.keys(AI_ALIASES).forEach(function (tag) {
+      AI_ALIASES[tag].forEach(function (alias) {
+        if (q.indexOf(alias.toLowerCase()) >= 0) tagHits[tag] = (tagHits[tag] || 0) + 1;
+      });
+    });
+    var scored = plugins.map(function (p) {
+      var score = 0;
+      (p.tags || []).forEach(function (t) { if (tagHits[t]) score += tagHits[t] * 5; });
+      var hay = (p.name + " " + p.description + " " + p.summary).toLowerCase();
+      if (hay.indexOf(q) >= 0) score += 2;
+      return { p: p, score: score };
+    });
+    var top = scored.filter(function (r) { return r.score > 0; })
+      .sort(function (a, b) { return b.score - a.score || (b.p.stars + b.p.matchScore) - (a.p.stars + a.p.matchScore); })
+      .slice(0, 6);
+    return { tags: Object.keys(tagHits), results: top };
+  }
+
+  function renderAI() {
+    var box = document.getElementById("ai-result");
+    var tagBox = document.getElementById("ai-tags");
+    var q = state.aiQuery;
+    if (!q) { tagBox.innerHTML = ""; box.innerHTML = ""; return; }
+    var res = aiMatch(q);
+    if (!res.tags.length && !res.results.length) {
+      tagBox.innerHTML = "";
+      box.innerHTML = '<div class="ai-empty">🤔 没识别到明确需求，换个说法试试，例如「看图」「长期记忆」「联网搜索」</div>';
+      return;
+    }
+    var tagHtml = "";
+    res.tags.forEach(function (t) { tagHtml += '<span class="chip">' + esc(t) + '</span>'; });
+    tagBox.innerHTML = tagHtml ? '<span class="ai-label">识别到的能力：</span>' + tagHtml : "";
+    if (!res.results.length) {
+      box.innerHTML = '<div class="ai-empty">没有完全匹配的插件，试试其他关键词</div>';
+      return;
+    }
+    var cards = "";
+    res.results.forEach(function (r) { cards += cardHtml(r.p); });
+    box.innerHTML = '<div class="ai-summary">为你推荐 ' + res.results.length + ' 个插件（按能力匹配 + star 排序）</div><div class="list">' + cards + '</div>';
+  }
+
   function renderHero() {
     var el = document.getElementById("hero-stats");
     if (!el) return;
@@ -330,6 +406,16 @@
       state.fav = !state.fav;
       updateFavToggle();
       renderList();
+    });
+    document.getElementById("ai-go").addEventListener("click", function () {
+      state.aiQuery = document.getElementById("ai-query").value.trim();
+      renderAI();
+    });
+    document.getElementById("ai-query").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        state.aiQuery = e.target.value.trim();
+        renderAI();
+      }
     });
 
     document.addEventListener("click", function (e) {
