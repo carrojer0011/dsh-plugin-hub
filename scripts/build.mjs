@@ -9,7 +9,6 @@ const outPath = join(root, "data", "plugins.bundle.js");
 const pluginDir = join(root, "plugin");
 const SITE_BASE = "https://carrojer0011.github.io/dsh-plugin-hub";
 const NL = String.fromCharCode(10);
-const GISCUS = '<script src="https://giscus.app/client.js" data-repo="carrojer0011/dsh-plugin-hub" data-repo-id="R_kgDOUCLRxw" data-category="Announcements" data-category-id="DIC_kwDOUCLRx84DEEBT" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="gruvbox_light" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>';
 
 const data = JSON.parse(readFileSync(jsonPath, "utf8"));
 const plugins = data.plugins || [];
@@ -113,9 +112,7 @@ function page(p) {
   L.push('      <div class="install-cmd">' + esc(install) + "</div>");
   if (mustBlock) L.push("      " + mustBlock);
   L.push('      <div class="related" data-related><h3>相关插件</h3><div class="related-grid" data-related-grid></div></div>');
-  L.push('      <div class="giscus-wrap"><h3>💬 评论</h3>');
-  L.push('      ' + GISCUS);
-  L.push('      </div>');
+  L.push('      <div class="giscus-wrap"><h3>💬 评论</h3><div class="giscus" data-giscus></div></div>');
   L.push('      <a class="back-link" href="../index.html">← 返回插件库</a>');
   L.push("    </div>");
   L.push("  </main>");
@@ -125,6 +122,7 @@ function page(p) {
   L.push('  <script src="../data/plugins.bundle.js"></script>');
   L.push("  <script>window.__PLUGIN_ID__ = " + JSON.stringify(p.id) + ";</script>");
   L.push('  <script src="../assets/plugin-detail.js"></script>');
+  L.push('  <script src="../assets/giscus.js"></script>');
   L.push("</body>");
   L.push("</html>");
   return L.join(NL);
