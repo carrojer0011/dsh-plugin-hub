@@ -152,3 +152,4 @@ writeFileSync(join(root, "sitemap.xml"), sitemap.join(NL), "utf8");
 writeFileSync(join(root, "robots.txt"), ["User-agent: *", "Allow: /", "Sitemap: " + SITE_BASE + "/sitemap.xml"].join(NL), "utf8");
 
 console.log("built: bundle + " + plugins.length + " 个静态页 + sitemap + robots");
+await import("./gen-readme.mjs");

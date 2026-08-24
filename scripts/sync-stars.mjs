@@ -63,3 +63,4 @@ const bundle = "window.__DSH_PLUGIN_DATA__ = " + JSON.stringify(data) + ";\n";
 writeFileSync(outPath, bundle, "utf8");
 
 console.log("sync done: ok=" + ok + " fail=" + fail + " skipped=" + skipped + (rateLimited ? " (RATE LIMITED, 请提供 GITHUB_TOKEN)" : ""));
+await import("./gen-readme.mjs");
