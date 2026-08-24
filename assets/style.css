@@ -394,6 +394,8 @@ select:focus { border-color: var(--accent); }
 .ai-input-row input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(77,107,254,.14); background: var(--panel); }
 .ai-input-row button { padding: 12px 24px; font-size: 15px; font-weight: 600; color: #fff; background: var(--accent); border: none; border-radius: 12px; cursor: pointer; transition: all .15s; }
 .ai-input-row button:hover { background: var(--accent-dark); }
+.ai-input-row .ai-clear { background: var(--panel-2); color: var(--text-dim); border: 1px solid var(--border); }
+.ai-input-row .ai-clear:hover { background: var(--panel); color: var(--accent); border-color: var(--accent); }
 .ai-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .ai-label { font-size: 13px; color: var(--text-faint); }
 .ai-result { margin-top: 14px; }
