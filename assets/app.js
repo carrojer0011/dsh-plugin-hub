@@ -422,20 +422,20 @@
     });
     document.getElementById("ai-go").addEventListener("click", function () {
       state.aiQuery = document.getElementById("ai-query").value.trim();
-      try { sessionStorage.setItem("dsh-ai-query", state.aiQuery); } catch (e) {}
+      try { localStorage.setItem("dsh-ai-query", state.aiQuery); } catch (e) {}
       renderAI();
     });
     document.getElementById("ai-query").addEventListener("keydown", function (e) {
       if (e.key === "Enter") {
         state.aiQuery = e.target.value.trim();
-        try { sessionStorage.setItem("dsh-ai-query", state.aiQuery); } catch (e) {}
+        try { localStorage.setItem("dsh-ai-query", state.aiQuery); } catch (e) {}
         renderAI();
       }
     });
     document.getElementById("ai-clear").addEventListener("click", function () {
       state.aiQuery = "";
       document.getElementById("ai-query").value = "";
-      try { sessionStorage.removeItem("dsh-ai-query"); } catch (e) {}
+      try { localStorage.removeItem("dsh-ai-query"); } catch (e) {}
       renderAI();
     });
 
@@ -504,7 +504,7 @@
   } catch (err) {}
   // 恢复上次的智能选型查询（从详情页返回后保留）
   try {
-    var savedAI = sessionStorage.getItem("dsh-ai-query");
+    var savedAI = localStorage.getItem("dsh-ai-query");
     if (savedAI) {
       state.aiQuery = savedAI;
       var aiEl = document.getElementById("ai-query");
