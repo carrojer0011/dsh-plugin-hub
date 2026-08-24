@@ -139,7 +139,7 @@
 
     var cards = "";
     list.forEach(function (p, i) {
-      cards += "<a class=\"must-card\" href=\"plugin.html?id=" + encodeURIComponent(p.id) + "\">"
+      cards += "<a class=\"must-card\" href=\"plugin/" + encodeURIComponent(p.id) + ".html\">"
         + "<span class=\"rank-badge\"># " + (i + 1) + "</span>"
         + "<h3>" + esc(p.name) + "</h3>"
         + "<div class=\"cat\">" + esc(catLabel(p.category)) + "</div>"
@@ -167,7 +167,7 @@
   }
 
   function cardHtml(p) {
-    var detailUrl = "plugin.html?id=" + encodeURIComponent(p.id);
+    var detailUrl = "plugin/" + encodeURIComponent(p.id) + ".html";
     var mustFlag = p.mustInstall ? "<span class=\"must-flag\">🔥 新手必装</span>" : "";
     var install = "dsh plugin --profile web add " + p.repo;
     var tagsHtml = "";

@@ -3,34 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>插件详情 · DSH 插件库</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <script src="assets/theme.js"></script>
-  <script src="assets/favorites.js"></script>
+  <title>跳转中 · DSH 插件库</title>
+  <script>
+    var id = new URLSearchParams(location.search).get("id");
+    if (id) { location.replace("plugin/" + encodeURIComponent(id) + ".html"); }
+    else { location.replace("index.html"); }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html">
-        <span class="logo">🐋</span>
-        <span class="brand-name">DSH 插件库</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">← 返回目录</a>
-        <button class="theme-toggle" type="button" aria-label="切换主题">🌙</button>
-      </nav>
-    </div>
-  </header>
-
-  <main class="wrap detail">
-    <div id="detail"></div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap"><span>🐋 DSH 插件库 · 安装第三方插件会在本机执行代码，请先审阅源码</span></div>
-  </footer>
-
-  <script src="data/plugins.bundle.js"></script>
-  <script src="assets/plugin-detail.js"></script>
+<body style="font-family:sans-serif;padding:40px;text-align:center;color:#888">
+  <p>正在跳转…</p>
+  <p><a href="index.html">如果未自动跳转，点此返回首页</a></p>
 </body>
 </html>

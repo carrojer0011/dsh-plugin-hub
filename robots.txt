@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carrojer0011.github.io/dsh-plugin-hub/sitemap.xml
