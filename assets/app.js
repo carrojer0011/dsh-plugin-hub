@@ -341,6 +341,19 @@
     var cards = "";
     res.results.forEach(function (r) { cards += cardHtml(r.p); });
     box.innerHTML = '<div class="ai-summary">为你推荐 ' + res.results.length + ' 个插件（按能力匹配 + star 排序）</div><div class="list">' + cards + '</div>';
+    semanticUpgrade(q);
+  }
+
+  async function semanticUpgrade(q) {
+    if (!window.__SEMANTIC__) return;
+    var sem = await window.__SEMANTIC__.match(q);
+    if (!sem || !sem.length) return;
+    var box = document.getElementById("ai-result");
+    var tagBox = document.getElementById("ai-tags");
+    var cards = "";
+    sem.forEach(function (r) { cards += cardHtml(r.p); });
+    tagBox.innerHTML = '<span class="ai-label">🤖 语义匹配：</span>';
+    box.innerHTML = '<div class="ai-summary">语义推荐 ' + sem.length + ' 个插件（AI 相似度）</div><div class="list">' + cards + '</div>';
   }
 
   function renderHero() {
