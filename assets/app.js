@@ -226,7 +226,7 @@
     });
 
     var html = "";
-    tagNames.forEach(function (tag) {
+    tagNames.forEach(function (tag, idx) {
       var boxPlugins = groups[tag];
       // 新手必装优先置顶，其余保持当前排序
       var must = boxPlugins.filter(function (p) { return p.mustInstall; });
@@ -237,8 +237,10 @@
       ordered.forEach(function (p) { cards += cardHtml(p); });
 
       var active = state.tags.indexOf(tag) >= 0 ? " active" : "";
-      html += "<section class=\"tag-section\">"
+      var isHot = idx < HOT_COUNT;
+      html += "<section class=\"tag-section" + (isHot ? " expanded" : " collapsed") + "\">"
         + "<div class=\"tag-section-head\">"
+        + "<span class=\"section-chevron\">" + (isHot ? "▾" : "▸") + "</span>"
         + "<button class=\"tag-title" + active + "\" data-tag=\"" + esc(tag) + "\" type=\"button\" title=\"点击筛选此标签\">" + esc(tag) + "</button>"
         + "<span class=\"tag-section-count\">" + boxPlugins.length + " 个插件</span>"
         + (must.length ? "<span class=\"tag-section-must\">🔥 含 " + must.length + " 个新手必装</span>" : "")
@@ -334,6 +336,17 @@
           });
         } else {
           window.prompt("复制安装命令：", cmd);
+        }
+        return;
+      }
+      var head = e.target.closest(".tag-section-head");
+      if (head) {
+        var sec = head.closest(".tag-section");
+        if (sec) {
+          sec.classList.toggle("collapsed");
+          sec.classList.toggle("expanded");
+          var ch = head.querySelector(".section-chevron");
+          if (ch) ch.textContent = sec.classList.contains("collapsed") ? "▸" : "▾";
         }
         return;
       }
