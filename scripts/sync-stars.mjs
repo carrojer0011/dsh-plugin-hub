@@ -30,6 +30,12 @@ for (const p of plugins) {
         delete p.missing;
         ok++;
       }
+      p.pushedAt = j.pushed_at || null;
+      p.archived = !!j.archived;
+      p.license = (j.license && j.license.spdx_id) || null;
+      p.language = j.language || null;
+      p.openIssues = typeof j.open_issues_count === "number" ? j.open_issues_count : null;
+      p.forks = typeof j.forks_count === "number" ? j.forks_count : null;
     } else if (r.status === 403 || r.status === 429) {
       rateLimited = true;
       skipped++;

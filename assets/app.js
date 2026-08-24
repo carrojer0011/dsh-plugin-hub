@@ -29,6 +29,29 @@
       .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
 
+  function daysAgo(iso) {
+    try {
+      var d = new Date(iso);
+      var days = Math.floor((Date.now() - d.getTime()) / 86400000);
+      if (days <= 0) return "今天";
+      if (days === 1) return "1天前";
+      if (days < 30) return days + "天前";
+      var m = Math.floor(days / 30);
+      if (m < 12) return m + "个月前";
+      return Math.floor(m / 12) + "年前";
+    } catch (e) { return ""; }
+  }
+
+  function metaHtml(p) {
+    var s = "";
+    if (p.missing) s += "<span class=\"badge warn\">⚠️ 已失效</span>";
+    else if (p.archived) s += "<span class=\"badge warn\">⚠️ 已归档</span>";
+    if (p.pushedAt) s += "<span class=\"badge\">🕒 " + daysAgo(p.pushedAt) + "更新</span>";
+    if (p.license) s += "<span class=\"badge\">📄 " + esc(p.license) + "</span>";
+    if (p.language) s += "<span class=\"badge\">🔤 " + esc(p.language) + "</span>";
+    return s ? "<div class=\"card-meta\">" + s + "</div>" : "";
+  }
+
   // 标签 + 匹配度（热度）：Σ(含该标签插件的综合分)
   function computeTags() {
     var m = {};
@@ -157,6 +180,7 @@
       + "<div class=\"card-cat\">" + esc(catLabel(p.category)) + " · " + esc(p.repo) + "</div></div>"
       + "<span class=\"star-badge\">⭐ " + fmt(p.stars) + "</span>"
       + "</div>"
+      + metaHtml(p)
       + "<p class=\"card-desc\">" + esc(p.description) + "</p>"
       + "<p class=\"card-summary\">" + esc(p.summary) + "</p>"
       + "<div class=\"card-tags\">" + tagsHtml + "</div>"

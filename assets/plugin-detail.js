@@ -21,6 +21,19 @@
   }
   function catLabel(key) { var c = catMap[key]; return c ? (c.icon + " " + c.label) : key; }
 
+  function daysAgo(iso) {
+    try {
+      var d = new Date(iso);
+      var days = Math.floor((Date.now() - d.getTime()) / 86400000);
+      if (days <= 0) return "今天";
+      if (days === 1) return "1天前";
+      if (days < 30) return days + "天前";
+      var m = Math.floor(days / 30);
+      if (m < 12) return m + "个月前";
+      return Math.floor(m / 12) + "年前";
+    } catch (e) { return ""; }
+  }
+
   var id = "";
   try { id = new URLSearchParams(location.search).get("id") || ""; } catch (e) {}
 
@@ -69,6 +82,13 @@
   html += "<div class=\"detail-meta\">"
     + "<span>分类：<a href=\"index.html?category=" + encodeURIComponent(p.category) + "\">" + esc(catLabel(p.category)) + "</a></span>"
     + "<span>仓库：<a href=\"" + esc(p.url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(p.repo) + "</a></span>"
+    + "<span>⭐ " + p.stars + "</span>"
+    + (typeof p.forks === "number" ? "<span>🍴 " + p.forks + "</span>" : "")
+    + (typeof p.openIssues === "number" ? "<span>🐞 " + p.openIssues + "</span>" : "")
+    + (p.license ? "<span>📄 " + esc(p.license) + "</span>" : "")
+    + (p.language ? "<span>🔤 " + esc(p.language) + "</span>" : "")
+    + (p.pushedAt ? "<span>🕒 " + daysAgo(p.pushedAt) + "更新</span>" : "")
+    + (p.missing ? "<span class=\"warn\">⚠️ 已失效</span>" : (p.archived ? "<span class=\"warn\">⚠️ 已归档</span>" : ""))
     + "</div>";
 
   html += "<div class=\"detail-tags\">" + tagsHtml + "</div>";

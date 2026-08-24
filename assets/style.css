@@ -280,6 +280,15 @@ select:focus { border-color: var(--accent); }
 .notfound .all a { font-size: 13px; color: var(--text-dim); background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; }
 .notfound .all a:hover { color: var(--accent); border-color: var(--accent); }
 
+/* 元数据徽标 */
+.card-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: -2px; }
+.badge {
+  font-size: 11px; color: var(--text-faint); background: var(--panel-2);
+  border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; white-space: nowrap;
+}
+.badge.warn { color: #b8451f; background: #fff4ef; border-color: #ffd9c2; font-weight: 600; }
+.detail-meta .warn { color: #b8451f; font-weight: 600; }
+
 @media (max-width: 640px) {
   .controls { width: 100%; }
   .controls select { flex: 1; }
