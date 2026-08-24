@@ -34,6 +34,22 @@
     } catch (e) { return ""; }
   }
 
+  function related(p) {
+    var scored = [];
+    plugins.forEach(function (x) {
+      if (x.id === p.id) return;
+      var overlap = 0;
+      (p.tags || []).forEach(function (t) { if ((x.tags || []).indexOf(t) >= 0) overlap++; });
+      var sameCat = x.category === p.category ? 1 : 0;
+      scored.push({ p: x, score: overlap * 2 + sameCat });
+    });
+    scored.sort(function (a, b) {
+      if (b.score !== a.score) return b.score - a.score;
+      return b.p.stars - a.p.stars;
+    });
+    return scored.filter(function (s) { return s.score > 0; }).slice(0, 6).map(function (s) { return s.p; });
+  }
+
   var id = "";
   try { id = new URLSearchParams(location.search).get("id") || ""; } catch (e) {}
 
@@ -107,6 +123,17 @@
 
   html += "<div class=\"install-cmd\">" + esc(install) + "</div>";
   html += mustBlock;
+  var rel = related(p);
+  if (rel.length) {
+    var relHtml = "";
+    rel.forEach(function (x) {
+      relHtml += "<a class=\"related-card\" href=\"plugin.html?id=" + encodeURIComponent(x.id) + "\">"
+        + "<span class=\"related-name\">" + esc(x.name) + "</span>"
+        + "<span class=\"related-meta\">⭐ " + x.stars + " · " + esc(catLabel(x.category)) + "</span>"
+        + "</a>";
+    });
+    html += "<div class=\"related\"><h3>相关插件</h3><div class=\"related-grid\">" + relHtml + "</div></div>";
+  }
   html += "<a class=\"back-link\" href=\"index.html\">← 返回插件库</a>";
 
   box.innerHTML = "<div class=\"detail-card\">" + html + "</div>";
