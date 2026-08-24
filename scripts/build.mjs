@@ -112,6 +112,7 @@ function page(p) {
   L.push('      <div class="install-cmd">' + esc(install) + "</div>");
   if (mustBlock) L.push("      " + mustBlock);
   L.push('      <div class="related" data-related><h3>相关插件</h3><div class="related-grid" data-related-grid></div></div>');
+  L.push('      <div class="giscus-wrap"><h3>💬 评论</h3><div class="giscus" data-giscus></div></div>');
   L.push('      <a class="back-link" href="../index.html">← 返回插件库</a>');
   L.push("    </div>");
   L.push("  </main>");
@@ -121,6 +122,7 @@ function page(p) {
   L.push('  <script src="../data/plugins.bundle.js"></script>');
   L.push("  <script>window.__PLUGIN_ID__ = " + JSON.stringify(p.id) + ";</script>");
   L.push('  <script src="../assets/plugin-detail.js"></script>');
+  L.push('  <script src="../assets/giscus.js"></script>');
   L.push("</body>");
   L.push("</html>");
   return L.join(NL);

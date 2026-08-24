@@ -377,3 +377,8 @@ select:focus { border-color: var(--accent); }
 .fav-toggle.active { background: var(--star); border-color: var(--star); color: #fff; }
 .fav-toggle:hover { border-color: var(--accent); }
 
+/* 评论 */
+.giscus-wrap { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 20px; }
+.giscus-wrap h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; }
+.giscus { min-height: 200px; }
+
