@@ -296,3 +296,59 @@ select:focus { border-color: var(--accent); }
   .must-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 30px; }
 }
+
+/* 主题切换按钮 */
+.theme-toggle {
+  font-size: 15px; line-height: 1; background: transparent;
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px;
+  cursor: pointer; color: var(--text);
+}
+.theme-toggle:hover { border-color: var(--accent); }
+
+/* ===== 深色模式 ===== */
+[data-theme="dark"] {
+  --bg: #0d1220;
+  --panel: #161c2b;
+  --panel-2: #1e2637;
+  --border: #2a3448;
+  --border-strong: #38445e;
+  --text: #e6edf7;
+  --text-dim: #9aa7bd;
+  --text-faint: #71809a;
+  --accent: #6b8cff;
+  --accent-dark: #5a7bf0;
+  --accent-2: #8aa3ff;
+  --accent-soft: #1c2540;
+  --star: #f5b83d;
+  --hot: #ff7a45;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.45);
+  --shadow: 0 10px 32px rgba(0,0,0,.55);
+}
+[data-theme="dark"] .site-header { background: rgba(13,18,32,.85); }
+[data-theme="dark"] .hero { background: linear-gradient(135deg, #131b31, #10172a 45%, #0f1c2e); border-color: var(--border); }
+[data-theme="dark"] .hero::before { background: #1d2b4d; }
+[data-theme="dark"] .hero::after { background: #16304a; }
+[data-theme="dark"] .hero-badge { background: rgba(22,28,43,.85); border-color: var(--border-strong); }
+[data-theme="dark"] .hero-stat,
+[data-theme="dark"] .must-card,
+[data-theme="dark"] .search-panel,
+[data-theme="dark"] .tag-section,
+[data-theme="dark"] .card,
+[data-theme="dark"] .detail-card,
+[data-theme="dark"] .notfound,
+[data-theme="dark"] .site-footer { background: var(--panel); }
+[data-theme="dark"] .tag-section-head { background: linear-gradient(135deg, #1a2337, #161c2b); }
+[data-theme="dark"] .tag-title,
+[data-theme="dark"] .btn,
+[data-theme="dark"] .toggle-btn,
+[data-theme="dark"] .clear-btn,
+[data-theme="dark"] .notfound .all a { background: var(--panel-2); border-color: var(--border); color: var(--text); }
+[data-theme="dark"] .star-badge { background: #2a2413; border-color: #6b5517; color: #f5c14a; }
+[data-theme="dark"] .chip.hot { background: #2a1c16; border-color: #6b3c28; color: #ff8c5a; }
+[data-theme="dark"] .chip.hot .cnt { color: #ff8c5a; }
+[data-theme="dark"] .badge.warn { background: #2a1a14; border-color: #6b3c28; color: #ff9d76; }
+[data-theme="dark"] .detail-must { background: #2a1a14; border-color: #6b3c28; color: #ff9d76; }
+[data-theme="dark"] .detail-meta .warn { color: #ff9d76; }
+[data-theme="dark"] #search:focus { background: var(--panel); }
+[data-theme="dark"] .must-card h3 { color: var(--text); }
+
