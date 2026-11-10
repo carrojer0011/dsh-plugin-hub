@@ -3,7 +3,7 @@
     "title": "DSH 插件库",
     "subtitle": "DeepSeek Harness 插件收录与评价",
     "source": "https://github.com/topics/dsh-plugin",
-    "updatedAt": "2026-11-09T04:47:36.254Z",
+    "updatedAt": "2026-11-10T06:03:04.094Z",
     "totalPlugins": 200,
     "enrichedAt": "2026-08-24T06:32:47.099Z",
     "syncStatus": "full"
@@ -112,7 +112,7 @@
       ],
       "description": "给纯文本模型外挂视觉能力：粘贴图片即得结构化 JSON 证据（OCR、版面、语义），号称全网最强 DSH 外挂视觉插件。",
       "summary": "补齐 DSH 最大短板「看图」的首选，识别结果结构化、可校验，非简单贴图。",
-      "stars": 4864,
+      "stars": 4885,
       "matchScore": 96,
       "mustInstall": true,
       "mustInstallReason": "文本模型看图是刚需，粘贴截图即可 OCR/看懂 UI，几乎人人需要。",
@@ -134,7 +134,7 @@
       ],
       "description": "为纯文本模型设计的视觉工具箱：多图理解、图片问答、长截图 OCR、前端 UI 还原、GUI 自动化。",
       "summary": "工具链比单点看图更全，适合需要 UI 还原与 GUI 自动化的进阶用户。",
-      "stars": 1258,
+      "stars": 1257,
       "matchScore": 88,
       "pushedAt": "2026-10-13T09:12:47Z",
       "archived": false,
@@ -154,14 +154,14 @@
       ],
       "description": "为文本型 DSH 提供「眼睛」：内置免费视觉链（无需 key）+ 像素级视觉工具（问答、定位、裁剪、取色、OCR、SVG 追踪、截图）。",
       "summary": "免费视觉链 + 像素级工具很实用，一条命令安装、无需 Python。",
-      "stars": 1247,
+      "stars": 1254,
       "matchScore": 85,
-      "pushedAt": "2026-11-09T02:30:07Z",
+      "pushedAt": "2026-11-09T17:59:44Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
       "openIssues": 1,
-      "forks": 65
+      "forks": 63
     },
     {
       "id": "dsh-vision-toolkit",
@@ -174,13 +174,13 @@
       ],
       "description": "agent-vision-toolkit 的 DSH 原生集成版：粘贴图片识别、多图问答、截图到前端 UI 还原。",
       "summary": "与 DSH 集成更顺滑，装完即用。",
-      "stars": 934,
+      "stars": 937,
       "matchScore": 82,
       "pushedAt": "2026-11-06T18:38:10Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 5,
+      "openIssues": 6,
       "forks": 48
     },
     {
@@ -215,14 +215,14 @@
       ],
       "description": "自进化上下文数据库：统一 Agent 记忆、知识 RAG 与技能，字节跳动出品。",
       "summary": "大厂背书、架构完整，适合想把记忆/知识/技能统一管理的中重度用户。",
-      "stars": 41829,
+      "stars": 41891,
       "matchScore": 92,
-      "pushedAt": "2026-11-09T04:40:01Z",
+      "pushedAt": "2026-11-10T05:27:39Z",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python",
-      "openIssues": 1343,
-      "forks": 3417
+      "openIssues": 1366,
+      "forks": 3424
     },
     {
       "id": "everos",
@@ -235,7 +235,7 @@
       ],
       "description": "一套可移植的记忆层，服务所有 AI agent：本地优先、Markdown 原生、用户自有、跨应用自进化。",
       "summary": "本地优先 + Markdown 透明可查，隐私与可控性最好，新手也能看懂记忆内容。",
-      "stars": 13858,
+      "stars": 13864,
       "matchScore": 93,
       "mustInstall": true,
       "mustInstallReason": "本地优先、Markdown 透明的长期记忆，让 agent 记住你的项目与偏好，且数据自己掌控。",
@@ -244,7 +244,7 @@
       "license": "Apache-2.0",
       "language": "Python",
       "openIssues": 46,
-      "forks": 968
+      "forks": 971
     },
     {
       "id": "memos",
@@ -257,13 +257,13 @@
       ],
       "description": "自进化记忆 OS：超持久记忆、混合检索、跨任务技能复用，官方称节省 35.24% token，支持 DSH。",
       "summary": "主打省 token + 记忆复用，性价比取向的长期记忆方案。",
-      "stars": 12330,
+      "stars": 12341,
       "matchScore": 90,
-      "pushedAt": "2026-11-07T16:48:42Z",
+      "pushedAt": "2026-11-09T15:50:32Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "openIssues": 134,
+      "openIssues": 163,
       "forks": 1116
     },
     {
@@ -277,7 +277,7 @@
       ],
       "description": "为 agent 提供「无限记忆」。",
       "summary": "轻量记忆补充，理念直接。",
-      "stars": 1235,
+      "stars": 1236,
       "matchScore": 68,
       "pushedAt": "2026-11-04T08:25:06Z",
       "archived": false,
@@ -298,7 +298,7 @@
       ],
       "description": "知识图谱记忆插件：从对话抽取结构化三元组，压缩上下文 75%，跨会话经验复用。",
       "summary": "图结构记忆 + 强压缩，适合长期项目的事实/关系沉淀。",
-      "stars": 673,
+      "stars": 675,
       "matchScore": 80,
       "pushedAt": "2026-10-01T00:45:49Z",
       "archived": false,
@@ -319,14 +319,14 @@
       ],
       "description": "跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查、技能自进化与技能管理器。",
       "summary": "纯插件实现的记忆 + 自进化，功能密度高。",
-      "stars": 727,
+      "stars": 748,
       "matchScore": 78,
       "pushedAt": "2026-10-29T14:45:44Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
       "openIssues": 38,
-      "forks": 74
+      "forks": 78
     },
     {
       "id": "dsh-mnemon",
@@ -339,14 +339,14 @@
       ],
       "description": "三层记忆控制面：持久运行时上下文、可检索记忆。",
       "summary": "分层记忆治理思路清晰，omdsh 出品质量稳。",
-      "stars": 937,
+      "stars": 953,
       "matchScore": 74,
       "pushedAt": "2026-11-08T19:48:14Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 24,
-      "forks": 65
+      "openIssues": 28,
+      "forks": 66
     },
     {
       "id": "dsh-noema",
@@ -379,14 +379,14 @@
       ],
       "description": "DeepSeek 原生终端 AI 编码 agent，围绕前缀缓存稳定性设计，可常驻运行。",
       "summary": "终端编码 agent，前缀缓存稳定是亮点，适合常驻开发。",
-      "stars": 36137,
+      "stars": 36148,
       "matchScore": 88,
-      "pushedAt": "2026-11-09T04:39:45Z",
+      "pushedAt": "2026-11-10T04:23:41Z",
       "archived": false,
       "license": "MIT",
       "language": "Go",
-      "openIssues": 699,
-      "forks": 2507
+      "openIssues": 715,
+      "forks": 2506
     },
     {
       "id": "dsh-tui",
@@ -399,16 +399,16 @@
       ],
       "description": "Claude Code 风终端界面：鲸鱼顶栏、实时状态、流式思考、双击 Esc 回滚、上下文进度 + TPS，npm 一键装。",
       "summary": "把 DSH 变成熟悉的 Claude Code 体验，官方公众号收录，终端党首选。",
-      "stars": 7260,
+      "stars": 7345,
       "matchScore": 90,
       "mustInstall": true,
       "mustInstallReason": "Claude Code 风终端界面，实时状态 + 流式思考 + 一键回滚，从 Claude Code 转过来零学习成本。",
-      "pushedAt": "2026-11-09T04:41:38Z",
+      "pushedAt": "2026-11-10T05:53:27Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 122,
-      "forks": 351
+      "openIssues": 130,
+      "forks": 352
     },
     {
       "id": "dsh-tianshu-tui",
@@ -421,9 +421,9 @@
       ],
       "description": "交互式终端 UI：自研 ANSI 极简渲染核心、流式 Markdown/工具卡、多会话。",
       "summary": "自研渲染核心的轻量 TUI 备选。",
-      "stars": 300,
+      "stars": 302,
       "matchScore": 76,
-      "pushedAt": "2026-10-29T15:07:59Z",
+      "pushedAt": "2026-11-10T05:26:24Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -462,7 +462,7 @@
       ],
       "description": "给没有联网能力的模型补上网络搜索的桥接插件。",
       "summary": "联网搜索是信息型任务刚需，轻量易装，modlens 作者出品。",
-      "stars": 959,
+      "stars": 965,
       "matchScore": 82,
       "mustInstall": true,
       "mustInstallReason": "给模型补上联网搜索，查文档/新闻/资料不再靠旧知识。",
@@ -484,7 +484,7 @@
       ],
       "description": "AnySearch 网络搜索 provider 与高级搜索工具。",
       "summary": "可配置搜索源，搜索质量可控。",
-      "stars": 687,
+      "stars": 688,
       "matchScore": 76,
       "pushedAt": "2026-10-10T08:54:47Z",
       "archived": false,
@@ -504,7 +504,7 @@
       ],
       "description": "自动搜索中国互联网 8 大主流平台近 30 天内容，综合分析生成有据可查的研究报告。",
       "summary": "中文情报调研利器，输出带引用的报告。",
-      "stars": 2086,
+      "stars": 2091,
       "matchScore": 86,
       "pushedAt": "2026-11-03T10:15:00Z",
       "archived": false,
@@ -524,9 +524,9 @@
       ],
       "description": "为 agent 打造的多语言搜索工具，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。",
       "summary": "多领域垂直搜索，覆盖面广。",
-      "stars": 236,
+      "stars": 237,
       "matchScore": 74,
-      "pushedAt": "2026-11-08T05:46:13Z",
+      "pushedAt": "2026-11-09T14:03:23Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "Python",
@@ -544,14 +544,14 @@
       ],
       "description": "让 agent 使用你真实已登录的浏览器而不打断你：CLI + 扩展，浏览器自动化。",
       "summary": "复用真实登录态是亮点，省去模拟登录的麻烦，腾讯出品。",
-      "stars": 10201,
+      "stars": 10256,
       "matchScore": 86,
-      "pushedAt": "2026-11-09T04:44:41Z",
+      "pushedAt": "2026-11-09T16:47:46Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 137,
-      "forks": 739
+      "openIssues": 143,
+      "forks": 742
     },
     {
       "id": "dsh-browser",
@@ -564,14 +564,14 @@
       ],
       "description": "Chrome 侧边栏扩展，让 DSH 直接操控你的浏览器，无需视觉能力。",
       "summary": "侧边栏形态直观，无需视觉即可操控浏览器。",
-      "stars": 1006,
+      "stars": 1030,
       "matchScore": 78,
       "pushedAt": "2026-11-08T12:54:18Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 35,
-      "forks": 83
+      "openIssues": 37,
+      "forks": 84
     },
     {
       "id": "dsh-file",
@@ -606,14 +606,14 @@
       ],
       "description": "全球首个统一虚拟文件系统，为 AI agent 提供统一文件抽象。",
       "summary": "统一 VFS 思路前沿，适合多 agent/多存储场景。",
-      "stars": 3775,
+      "stars": 3781,
       "matchScore": 84,
-      "pushedAt": "2026-11-09T04:39:26Z",
+      "pushedAt": "2026-11-10T05:59:44Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
       "openIssues": 25,
-      "forks": 281
+      "forks": 282
     },
     {
       "id": "dsh-context",
@@ -626,14 +626,14 @@
       ],
       "description": "上下文可视化插件：Context 面板/浏览器 + 命令，透视上下文组成、演进、压缩与剪枝。",
       "summary": "把「上下文」可视化，帮你理解并控制 token 消耗。",
-      "stars": 4684,
+      "stars": 4812,
       "matchScore": 88,
-      "pushedAt": "2026-11-09T01:07:49Z",
+      "pushedAt": "2026-11-10T00:49:12Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
       "openIssues": 0,
-      "forks": 198
+      "forks": 202
     },
     {
       "id": "dsh-at-file",
@@ -647,7 +647,7 @@
       ],
       "description": "Codex 风格 @文件引用：在输入框搜索工作区文件并附加路径到提示词。",
       "summary": "精准注入上下文、减少 token 浪费，Codex 用户秒懂。",
-      "stars": 565,
+      "stars": 566,
       "matchScore": 86,
       "mustInstall": true,
       "mustInstallReason": "@文件精准引用上下文，避免全量贴代码浪费 token，是高效协作的基础。",
@@ -656,7 +656,7 @@
       "license": "MIT",
       "language": "JavaScript",
       "openIssues": 12,
-      "forks": 36
+      "forks": 35
     },
     {
       "id": "open-design",
@@ -669,14 +669,14 @@
       ],
       "description": "开源 Claude Design 替代：原型、落地页、仪表盘、幻灯片、图片与视频，导出 HTML/PDF/PPTX/MP4。",
       "summary": "设计引擎标杆，产出真实文件，覆盖面极广。",
-      "stars": 106691,
+      "stars": 106886,
       "matchScore": 97,
-      "pushedAt": "2026-11-09T03:54:42Z",
+      "pushedAt": "2026-11-10T05:43:45Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "openIssues": 1385,
-      "forks": 12149
+      "openIssues": 1386,
+      "forks": 12166
     },
     {
       "id": "openpencil",
@@ -689,14 +689,14 @@
       ],
       "description": "全球首个开源 AI 原生矢量设计工具，支持并发 Agent Teams，Design-as-Code。",
       "summary": "矢量级可编辑设计，从原型到 UI 直接落地。",
-      "stars": 7160,
+      "stars": 7180,
       "matchScore": 92,
-      "pushedAt": "2026-11-09T02:21:30Z",
+      "pushedAt": "2026-11-09T14:19:02Z",
       "archived": false,
       "license": "MIT",
       "language": "Rust",
-      "openIssues": 29,
-      "forks": 622
+      "openIssues": 31,
+      "forks": 626
     },
     {
       "id": "superdesign-skill",
@@ -709,7 +709,7 @@
       ],
       "description": "面向 Claude Code / Cursor / 任意编码 agent 的设计技能，把 AI 烂 UI 变成可交付的高品位前端。",
       "summary": "专治「AI 味 UI」，一键提升交付审美。",
-      "stars": 965,
+      "stars": 972,
       "matchScore": 82,
       "pushedAt": "2026-08-21T05:23:23Z",
       "archived": false,
@@ -729,14 +729,14 @@
       ],
       "description": "在回复中内联渲染交互式 UI：布局、图表、表单、测验、Mermaid、3D 场景 + 动作事件回环。",
       "summary": "对话内嵌可交互组件，演示与数据可视化友好。",
-      "stars": 936,
+      "stars": 956,
       "matchScore": 84,
-      "pushedAt": "2026-11-06T06:00:36Z",
+      "pushedAt": "2026-11-09T08:19:05Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
       "openIssues": 23,
-      "forks": 89
+      "forks": 90
     },
     {
       "id": "archify",
@@ -749,14 +749,14 @@
       ],
       "description": "生成美观可验证的架构图、工作流、时序、数据流、生命周期图——自包含 HTML，带动效与导出。",
       "summary": "架构文档化利器，输出干净可验证。",
-      "stars": 94797,
+      "stars": 95150,
       "matchScore": 91,
-      "pushedAt": "2026-11-09T04:34:32Z",
+      "pushedAt": "2026-11-10T05:11:42Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "JavaScript",
-      "openIssues": 357,
-      "forks": 6463
+      "openIssues": 352,
+      "forks": 6484
     },
     {
       "id": "dsh-visualize",
@@ -769,7 +769,7 @@
       ],
       "description": "在 DSH 对话中生成交互式可视化卡片。",
       "summary": "轻量可视化补充。",
-      "stars": 338,
+      "stars": 342,
       "matchScore": 74,
       "pushedAt": "2026-11-07T19:42:52Z",
       "archived": false,
@@ -789,14 +789,14 @@
       ],
       "description": "一个主题产出 Vox 风拼贴解说视频：Atlas Cloud + ffmpeg 端到端自动化。",
       "summary": "文本到成片全自动，内容创作利器。",
-      "stars": 2716,
+      "stars": 2742,
       "matchScore": 84,
       "pushedAt": "2026-10-05T16:15:11Z",
       "archived": false,
       "license": "MIT",
       "language": "Python",
       "openIssues": 7,
-      "forks": 375
+      "forks": 376
     },
     {
       "id": "dsh-image-gen",
@@ -809,14 +809,14 @@
       ],
       "description": "直接在 DSH 对话中生成图像。",
       "summary": "对话内出图，轻量够用。",
-      "stars": 1186,
+      "stars": 1209,
       "matchScore": 72,
       "pushedAt": "2026-11-08T16:38:10Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "openIssues": 7,
-      "forks": 75
+      "openIssues": 12,
+      "forks": 79
     },
     {
       "id": "awesome-gpt-image-2",
@@ -829,14 +829,14 @@
       ],
       "description": "Prompt as Code：GPT-Image2 工业级提示词引擎与模板库，470+ 案例、20+ 模板，提炼为 Skills。",
       "summary": "提示词资产库，图像生成质量的关键在提示词。",
-      "stars": 35603,
+      "stars": 35646,
       "matchScore": 88,
       "pushedAt": "2026-11-05T03:17:57Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
       "openIssues": 32,
-      "forks": 3372
+      "forks": 3376
     },
     {
       "id": "vibe-skills",
@@ -849,13 +849,13 @@
       ],
       "description": "通用技能：自动路由本地技能并智能编排 harness 工作流。",
       "summary": "技能自动路由 + 编排，减少手动指定技能的负担。",
-      "stars": 3807,
+      "stars": 3810,
       "matchScore": 85,
-      "pushedAt": "2026-11-07T15:40:42Z",
+      "pushedAt": "2026-11-09T07:33:42Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "Python",
-      "openIssues": 45,
+      "openIssues": 44,
       "forks": 344
     },
     {
@@ -889,14 +889,14 @@
       ],
       "description": "Superpowers 技能集：TDD、调试、规划与协作技能。",
       "summary": "经典工程技能集移植，提升代码质量。",
-      "stars": 152,
+      "stars": 153,
       "matchScore": 74,
       "pushedAt": "2026-11-08T05:19:24Z",
       "archived": false,
       "license": null,
       "language": "JavaScript",
       "openIssues": 0,
-      "forks": 12
+      "forks": 13
     },
     {
       "id": "dsh-skills-manager",
@@ -930,14 +930,14 @@
       ],
       "description": "Agent OS：agent 自我变聪明，面试门控 + 分阶段评估 + 预算化进化循环，支持 13 种运行时。",
       "summary": "自进化闭环设计严谨，进阶用户的实验场。",
-      "stars": 6339,
+      "stars": 6344,
       "matchScore": 88,
       "pushedAt": "2026-11-08T20:35:49Z",
       "archived": false,
       "license": "MIT",
       "language": "Python",
       "openIssues": 202,
-      "forks": 640
+      "forks": 641
     },
     {
       "id": "dashi-taskboard",
@@ -950,14 +950,14 @@
       ],
       "description": "DSH 任务看板插件。",
       "summary": "可视化任务看板，管理多任务进度。",
-      "stars": 3470,
+      "stars": 3473,
       "matchScore": 76,
       "pushedAt": "2026-11-06T10:47:23Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "JavaScript",
       "openIssues": 35,
-      "forks": 501
+      "forks": 500
     },
     {
       "id": "dsh-workflow",
@@ -971,14 +971,14 @@
       ],
       "description": "把 DSH 的一次性多 agent 调度升级为可生成、可保存、可治理、可观察、可恢复的 Workflow 层。",
       "summary": "把多 agent 协作工程化，复杂任务治理首选。",
-      "stars": 157,
+      "stars": 158,
       "matchScore": 82,
       "pushedAt": "2026-10-14T01:10:07Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
       "openIssues": 7,
-      "forks": 12
+      "forks": 13
     },
     {
       "id": "dsh-agent-teams",
@@ -991,13 +991,13 @@
       ],
       "description": "AgentTeams 插件：多 agent 团队协作。",
       "summary": "多 agent 并行协作。",
-      "stars": 2792,
+      "stars": 2828,
       "matchScore": 78,
       "pushedAt": "2026-11-06T03:05:01Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
-      "openIssues": 81,
+      "openIssues": 84,
       "forks": 238
     },
     {
@@ -1011,13 +1011,13 @@
       ],
       "description": "从 Claude Code / Codex 派发任务给 DSH agent：原生子代理进度、worker 会话、多模态桥（给纯文本 harness 视觉/图像生成）。",
       "summary": "跨 agent 调度 + 多模态桥，ZSeven-W 生态核心。",
-      "stars": 202,
+      "stars": 207,
       "matchScore": 80,
       "pushedAt": "2026-10-08T11:14:30Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
-      "openIssues": 0,
+      "openIssues": 1,
       "forks": 19
     },
     {
@@ -1051,7 +1051,7 @@
       ],
       "description": "开放侧边栏底座：内置文件渲染编辑/终端/Git/子代理页面，支持三方扩展注册新页面。",
       "summary": "Web 端效率核心，终端 + Git + 子代理一站集成。",
-      "stars": 5014,
+      "stars": 5037,
       "matchScore": 90,
       "mustInstall": true,
       "mustInstallReason": "侧边栏底座一次补齐文件/终端/Git/子代理，Web 端效率翻倍。",
@@ -1059,8 +1059,8 @@
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 183,
-      "forks": 478
+      "openIssues": 189,
+      "forks": 482
     },
     {
       "id": "dsh-web-ui",
@@ -1074,14 +1074,14 @@
       ],
       "description": "DSH Web UI 插件与皮肤合集：任务看板、Git 图、右侧面板、远程移动 UI、宠物、实时 token、皮肤中心。",
       "summary": "一揽子 UI 增强，按需开启。",
-      "stars": 10248,
+      "stars": 10293,
       "matchScore": 86,
-      "pushedAt": "2026-11-08T15:33:45Z",
+      "pushedAt": "2026-11-10T05:02:48Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript",
       "openIssues": 0,
-      "forks": 627
+      "forks": 626
     },
     {
       "id": "dsh-annotation",
@@ -1094,7 +1094,7 @@
       ],
       "description": "选中文字→批注→随消息发送；气泡隐藏批注块；回复按 Annotation 逐条对照。",
       "summary": "让引用与回复逐条对应，长对话更清晰。",
-      "stars": 164,
+      "stars": 166,
       "matchScore": 76,
       "pushedAt": "2026-11-03T02:22:17Z",
       "archived": false,
@@ -1114,13 +1114,13 @@
       ],
       "description": "鲸鱼娘系列皮肤。",
       "summary": "颜值担当，DSH 社区热门皮肤。",
-      "stars": 3069,
+      "stars": 3083,
       "matchScore": 74,
       "pushedAt": "2026-11-08T07:16:26Z",
       "archived": false,
       "license": "NOASSERTION",
       "language": "TypeScript",
-      "openIssues": 9,
+      "openIssues": 8,
       "forks": 97
     },
     {
@@ -1134,7 +1134,7 @@
       ],
       "description": "玻璃质感主题：顶栏/侧边栏/输入框/统计行磨砂玻璃，模糊度/磨砂度/背景全可调。",
       "summary": "高自由度玻璃主题，个性化玩家最爱。",
-      "stars": 433,
+      "stars": 435,
       "matchScore": 78,
       "pushedAt": "2026-08-22T02:10:10Z",
       "archived": false,
@@ -1175,14 +1175,14 @@
       ],
       "description": "一键安装 + 模型切换，覆盖 Claude Code / Codex / Grok / DSH / Kimi / Qwen 等十多种 CLI。",
       "summary": "多 CLI 统一模型切换，多工具用户省心。",
-      "stars": 3533,
+      "stars": 3534,
       "matchScore": 84,
-      "pushedAt": "2026-11-09T01:45:23Z",
+      "pushedAt": "2026-11-10T04:09:06Z",
       "archived": false,
       "license": "MIT",
       "language": "Rust",
       "openIssues": 397,
-      "forks": 405
+      "forks": 406
     },
     {
       "id": "dsh-plugin-subscriptions",
@@ -1195,13 +1195,13 @@
       ],
       "description": "把 ChatGPT(Codex)、Claude、Grok(X) 订阅复用为 DSH 的 LLM provider。",
       "summary": "已有订阅不浪费，复用为 DSH 后端。",
-      "stars": 574,
+      "stars": 580,
       "matchScore": 78,
       "pushedAt": "2026-11-08T03:14:29Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 24,
+      "openIssues": 26,
       "forks": 102
     },
     {
@@ -1215,14 +1215,14 @@
       ],
       "description": "本地 LLM 网关，位于 agent 与各 provider 之间，统一管理与计费。",
       "summary": "统一网关，成本与供应商管理。",
-      "stars": 111,
+      "stars": 110,
       "matchScore": 72,
-      "pushedAt": "2026-11-09T04:24:04Z",
+      "pushedAt": "2026-11-10T05:46:41Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "JavaScript",
-      "openIssues": 6,
-      "forks": 18
+      "openIssues": 3,
+      "forks": 17
     },
     {
       "id": "dsh-im",
@@ -1235,14 +1235,14 @@
       ],
       "description": "把 IM 机器人接入 DSH：飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord、WhatsApp。",
       "summary": "把 agent 搬进聊天软件，随时指挥。",
-      "stars": 3377,
+      "stars": 3430,
       "matchScore": 80,
       "pushedAt": "2026-11-07T05:03:35Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
-      "openIssues": 112,
-      "forks": 345
+      "openIssues": 120,
+      "forks": 354
     },
     {
       "id": "dsh-qqbot",
@@ -1255,7 +1255,7 @@
       ],
       "description": "让 QQ Bot 接入 DSH 的官方插件。",
       "summary": "QQ 官方接入，国内用户友好。",
-      "stars": 568,
+      "stars": 569,
       "matchScore": 74,
       "pushedAt": "2026-11-08T11:11:48Z",
       "archived": false,
@@ -1277,11 +1277,11 @@
       "summary": "给 agent 一个随时可用的后端，腾讯云生态。",
       "stars": 1163,
       "matchScore": 82,
-      "pushedAt": "2026-11-09T04:18:40Z",
+      "pushedAt": "2026-11-10T05:32:22Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 3,
+      "openIssues": 5,
       "forks": 149
     },
     {
@@ -1295,14 +1295,14 @@
       ],
       "description": "连接 DSH 到你的数据库，进行对话式数据分析。",
       "summary": "对话式数据分析，业务场景实用。",
-      "stars": 221,
+      "stars": 222,
       "matchScore": 76,
       "pushedAt": "2026-11-01T04:18:28Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
-      "openIssues": 18,
-      "forks": 18
+      "openIssues": 17,
+      "forks": 17
     },
     {
       "id": "hol-guard",
@@ -1315,14 +1315,14 @@
       ],
       "description": "AI agent 开源杀毒：运行时拦截危险工具、密钥访问、提示注入、恶意包、MCP、插件与技能。",
       "summary": "装第三方插件前的安全兜底，强烈建议搭配使用。",
-      "stars": 1080,
+      "stars": 1081,
       "matchScore": 86,
-      "pushedAt": "2026-11-09T04:37:13Z",
+      "pushedAt": "2026-11-10T05:46:33Z",
       "archived": false,
       "license": "Apache-2.0",
       "language": "Rust",
-      "openIssues": 91,
-      "forks": 256
+      "openIssues": 101,
+      "forks": 260
     },
     {
       "id": "api-relay-audit",
@@ -1335,7 +1335,7 @@
       ],
       "description": "本地安全审计：检测提示注入、模型替换、工具调用改写、SSE 异常、错误泄露、Web3 风险。",
       "summary": "对 AI 中转/代理做安全审计，进阶安全需求。",
-      "stars": 907,
+      "stars": 910,
       "matchScore": 80,
       "pushedAt": "2026-10-27T18:13:30Z",
       "archived": false,
@@ -1355,14 +1355,14 @@
       ],
       "description": "面向 DSH 的渗透测试模式。",
       "summary": "安全研究方向。",
-      "stars": 618,
+      "stars": 620,
       "matchScore": 70,
       "pushedAt": "2026-10-09T11:19:50Z",
       "archived": true,
       "license": null,
       "language": "JavaScript",
       "openIssues": 0,
-      "forks": 171
+      "forks": 175
     },
     {
       "id": "dsh-market",
@@ -1375,16 +1375,16 @@
       ],
       "description": "DSH 内置插件市场：浏览、搜索、一键安装。",
       "summary": "可视化插件市场，新手装插件的第一站。",
-      "stars": 11553,
+      "stars": 11731,
       "matchScore": 88,
       "mustInstall": true,
       "mustInstallReason": "插件市场入口，可视化搜索与一键安装，装其他插件都从这里开始。",
-      "pushedAt": "2026-11-08T16:51:21Z",
+      "pushedAt": "2026-11-09T17:49:02Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 92,
-      "forks": 440
+      "openIssues": 97,
+      "forks": 445
     },
     {
       "id": "dsh-fish",
@@ -1417,14 +1417,14 @@
       ],
       "description": "DSH 插件精选列表（社区维护的目录）。",
       "summary": "人工策展的高质量目录，发现好插件的权威来源。",
-      "stars": 23846,
+      "stars": 24093,
       "matchScore": 80,
-      "pushedAt": "2026-11-09T00:13:14Z",
+      "pushedAt": "2026-11-10T06:01:48Z",
       "archived": false,
       "license": "CC0-1.0",
       "language": "JavaScript",
-      "openIssues": 486,
-      "forks": 7483
+      "openIssues": 451,
+      "forks": 7702
     },
     {
       "id": "awesome-dsh-plugins",
@@ -1437,14 +1437,14 @@
       ],
       "description": "插件雷达与精选榜：多路自动发现 9000+ 候选，容器真实安装路径运行级实测（四档判定），精选 Top 50。",
       "summary": "带「实测」判定的榜单，可信度高。",
-      "stars": 1496,
+      "stars": 1498,
       "matchScore": 82,
-      "pushedAt": "2026-11-09T04:46:03Z",
+      "pushedAt": "2026-11-10T06:00:55Z",
       "archived": false,
       "license": "MIT",
       "language": "Python",
-      "openIssues": 26,
-      "forks": 189
+      "openIssues": 28,
+      "forks": 190
     },
     {
       "id": "dsh-plugins-marketplace",
@@ -1457,14 +1457,14 @@
       ],
       "description": "在 DSH Web GUI 中一键浏览、安装与更新 topic:dsh-plugin 插件。",
       "summary": "GUI 内插件市场备选。",
-      "stars": 202,
+      "stars": 203,
       "matchScore": 74,
-      "pushedAt": "2026-11-09T00:23:56Z",
+      "pushedAt": "2026-11-10T01:02:13Z",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript",
-      "openIssues": 32,
-      "forks": 11
+      "openIssues": 35,
+      "forks": 10
     },
     {
       "id": "dsh-find-plugins",
@@ -1477,7 +1477,7 @@
       ],
       "description": "在会话内搜索、安装并验证 GitHub 插件的 Skill。",
       "summary": "会话内找插件，star 排序。",
-      "stars": 228,
+      "stars": 230,
       "matchScore": 74,
       "pushedAt": "2026-09-25T14:58:33Z",
       "archived": false,
@@ -1497,14 +1497,14 @@
       ],
       "description": "DSH 插件生态的现代化桌面端解决方案，万物皆插件，桌面本身也是插件。",
       "summary": "桌面化体验，不想用命令行的首选。",
-      "stars": 35426,
+      "stars": 35551,
       "matchScore": 88,
       "pushedAt": "2026-11-06T16:29:38Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 403,
-      "forks": 1600
+      "openIssues": 407,
+      "forks": 1611
     },
     {
       "id": "minke",
@@ -1517,7 +1517,7 @@
       ],
       "description": "DeepSeek Harness 桌面端（lencx 出品，MacGPT 作者）。",
       "summary": "作者口碑好，桌面端精品。",
-      "stars": 700,
+      "stars": 701,
       "matchScore": 76,
       "pushedAt": "2026-10-18T13:48:05Z",
       "archived": false,
@@ -1537,14 +1537,14 @@
       ],
       "description": "把 DSH 装进口袋：电脑跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）。",
       "summary": "手机远程掌控 agent，移动办公。",
-      "stars": 2856,
+      "stars": 2878,
       "matchScore": 78,
       "pushedAt": "2026-10-17T09:48:40Z",
       "archived": false,
       "license": "GPL-2.0",
       "language": "JavaScript",
-      "openIssues": 33,
-      "forks": 125
+      "openIssues": 36,
+      "forks": 127
     },
     {
       "id": "dsh-launcher",
@@ -1577,7 +1577,7 @@
       ],
       "description": "动画宠物公开画廊，兼容 Codex / Claude Code / DSH 等。",
       "summary": "桌宠画廊，挑一只陪你写代码。",
-      "stars": 4347,
+      "stars": 4350,
       "matchScore": 74,
       "pushedAt": "2026-10-10T22:07:22Z",
       "archived": false,
@@ -1617,14 +1617,14 @@
       ],
       "description": "一行命令安装现成宠物（28 个透明动画），或用 AI 视频自造专属宠物。",
       "summary": "即装即用 + 可自造，趣味性高。",
-      "stars": 5917,
+      "stars": 5987,
       "matchScore": 72,
       "pushedAt": "2026-11-09T02:52:29Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 1,
-      "forks": 502
+      "openIssues": 10,
+      "forks": 509
     },
     {
       "id": "whale-girl",
@@ -1637,7 +1637,7 @@
       ],
       "description": "DSH Web GUI 桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。",
       "summary": "怀旧 QQ 宠物情怀，陪伴感强。",
-      "stars": 405,
+      "stars": 407,
       "matchScore": 70,
       "pushedAt": "2026-10-30T13:15:27Z",
       "archived": false,
@@ -1657,7 +1657,7 @@
       ],
       "description": "把 DSH 变成 2005 年门户网站：恶搞广告、假游戏、弹窗。",
       "summary": "纯整活，图一乐。",
-      "stars": 714,
+      "stars": 715,
       "matchScore": 62,
       "pushedAt": "2026-11-06T23:51:21Z",
       "archived": false,
@@ -1677,14 +1677,14 @@
       ],
       "description": "Harness 工程入门教程，从 0 到 1。",
       "summary": "系统入门 DSH 的首选教程。",
-      "stars": 23781,
+      "stars": 24095,
       "matchScore": 84,
       "pushedAt": "2026-10-22T14:23:31Z",
       "archived": false,
       "license": "MIT",
       "language": "TypeScript",
-      "openIssues": 21,
-      "forks": 2739
+      "openIssues": 22,
+      "forks": 2772
     },
     {
       "id": "dsh-handbook",
@@ -1697,14 +1697,14 @@
       ],
       "description": "从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 agent 对比（中英 PDF）。",
       "summary": "中文深度手册，含实测对比，进阶必读。",
-      "stars": 955,
+      "stars": 960,
       "matchScore": 82,
       "pushedAt": "2026-11-04T12:55:07Z",
       "archived": false,
       "license": null,
       "language": "HTML",
-      "openIssues": 3,
-      "forks": 59
+      "openIssues": 4,
+      "forks": 60
     },
     {
       "id": "dshfind",
@@ -1717,14 +1717,14 @@
       ],
       "description": "DSH 原理学习、插件市场与最佳实践。",
       "summary": "原理 + 实践结合的学习导航。",
-      "stars": 374,
+      "stars": 378,
       "matchScore": 74,
-      "pushedAt": "2026-11-09T00:01:38Z",
+      "pushedAt": "2026-11-09T10:24:40Z",
       "archived": false,
       "license": null,
       "language": "JavaScript",
       "openIssues": 53,
-      "forks": 28
+      "forks": 27
     },
     {
       "id": "hello-dsh",
@@ -1758,14 +1758,14 @@
       ],
       "description": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23).",
       "summary": "注入器+路由标准套件，安装即用",
-      "stars": 7011,
+      "stars": 7012,
       "matchScore": 81,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-09-18T23:10:58Z",
       "archived": false,
-      "forks": 197,
-      "openIssues": 183
+      "forks": 196,
+      "openIssues": 181
     },
     {
       "id": "dsh-web",
@@ -1779,13 +1779,13 @@
       ],
       "description": "DeepSeek Harness（DSH）Web 插件聚合生态包 · 一切皆插件，创意工坊分发（dsh-market.com）",
       "summary": "Web 插件聚合生态包，创意工坊分发",
-      "stars": 10248,
+      "stars": 10293,
       "matchScore": 81,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "pushedAt": "2026-11-08T15:33:45Z",
+      "pushedAt": "2026-11-10T05:02:48Z",
       "archived": false,
-      "forks": 627,
+      "forks": 626,
       "openIssues": 0
     },
     {
@@ -1799,7 +1799,7 @@
       ],
       "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
       "summary": "两阶段预设：极简对齐 + 标准工具",
-      "stars": 3722,
+      "stars": 3721,
       "matchScore": 81,
       "license": "NOASSERTION",
       "language": "JavaScript",
@@ -1819,13 +1819,13 @@
       ],
       "description": "本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）",
       "summary": "本地自进化内容发现，多平台主动找内容",
-      "stars": 3716,
+      "stars": 3727,
       "matchScore": 80,
       "license": "MIT",
       "language": "Python",
-      "pushedAt": "2026-11-08T21:21:15Z",
+      "pushedAt": "2026-11-09T16:15:45Z",
       "archived": false,
-      "forks": 199,
+      "forks": 200,
       "openIssues": 24
     },
     {
@@ -1840,7 +1840,7 @@
       ],
       "description": "DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装",
       "summary": "余额盯盘小鲸鱼，拖拽吸附",
-      "stars": 7051,
+      "stars": 7097,
       "matchScore": 79,
       "license": "MIT",
       "language": "JavaScript",
@@ -1860,7 +1860,7 @@
       ],
       "description": "Lively Working-line extension for pi CLI and DSH",
       "summary": "Working-line 状态行扩展",
-      "stars": 667,
+      "stars": 668,
       "matchScore": 78,
       "license": "MIT",
       "language": "TypeScript",
@@ -1880,14 +1880,14 @@
       ],
       "description": "Local-first AI agent runtime with sandboxed sessions, MCP tools, memory, credentials, audit/replay, and a built-in console. Run OpenAI, Anthropic, MiniMax, DeepSeek V4, and OpenAI-compatible models on your infrastructure.",
       "summary": "本地优先运行时，沙箱会话+MCP",
-      "stars": 641,
+      "stars": 642,
       "matchScore": 78,
       "license": "Apache-2.0",
       "language": "TypeScript",
       "pushedAt": "2026-11-08T14:15:39Z",
       "archived": false,
-      "forks": 76,
-      "openIssues": 13
+      "forks": 77,
+      "openIssues": 14
     },
     {
       "id": "dsh-desktop",
@@ -1900,14 +1900,14 @@
       ],
       "description": "DeepSeek Harness Desktop App: a local AI desktop workspace for DSH Sessions, projects, files, web research, plugins, and Office artifacts.",
       "summary": "本地桌面工作区",
-      "stars": 489,
+      "stars": 490,
       "matchScore": 78,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-08T20:39:40Z",
+      "pushedAt": "2026-11-10T00:20:38Z",
       "archived": false,
-      "forks": 23,
-      "openIssues": 5
+      "forks": 22,
+      "openIssues": 3
     },
     {
       "id": "museai",
@@ -1920,13 +1920,13 @@
       ],
       "description": "创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）",
       "summary": "AI 角色互动与故事",
-      "stars": 692,
+      "stars": 696,
       "matchScore": 78,
       "license": null,
       "language": "TypeScript",
       "pushedAt": "2026-11-04T05:53:15Z",
       "archived": false,
-      "forks": 66,
+      "forks": 67,
       "openIssues": 9
     },
     {
@@ -1940,14 +1940,14 @@
       ],
       "description": "LLM-supervised persistent memory for AI agents — graph-based recall, cross-session knowledge, single binary. Works with DeepSeek Harness, Claude Code, OpenClaw, and any agent runtime.",
       "summary": "图结构持久记忆，跨会话召回",
-      "stars": 701,
+      "stars": 709,
       "matchScore": 78,
       "license": "Apache-2.0",
       "language": "Go",
-      "pushedAt": "2026-10-31T12:30:38Z",
+      "pushedAt": "2026-11-09T15:40:55Z",
       "archived": false,
       "forks": 81,
-      "openIssues": 12
+      "openIssues": 11
     },
     {
       "id": "deepseek-harness-studio",
@@ -1960,7 +1960,7 @@
       ],
       "description": "DeepSeek Harness 零代码桌面端｜一键启动，支持 Windows 与 macOS；内置插件发现、热点插件推送、一键安装与管理、AI 智能推荐和视觉增强。",
       "summary": "零代码桌面端，一键启动",
-      "stars": 712,
+      "stars": 715,
       "matchScore": 78,
       "license": "MIT",
       "language": "TypeScript",
@@ -1980,14 +1980,14 @@
       ],
       "description": "Structural memory for AI coding agents. Bi-temporal graph, MCP-native, zero LLM calls. Cursor · Claude Code · Codex · DeepSeek Harness · Hermes · VS Code · Windsurf.",
       "summary": "结构记忆，双时态图零 LLM",
-      "stars": 512,
+      "stars": 515,
       "matchScore": 78,
       "license": "NOASSERTION",
       "language": "Python",
-      "pushedAt": "2026-11-08T12:52:07Z",
+      "pushedAt": "2026-11-09T19:00:33Z",
       "archived": false,
       "forks": 45,
-      "openIssues": 31
+      "openIssues": 32
     },
     {
       "id": "deepseek-design",
@@ -2000,14 +2000,14 @@
       ],
       "description": "DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness.",
       "summary": "可编辑设计系统，AI 生成+模板+PPT",
-      "stars": 1779,
+      "stars": 1796,
       "matchScore": 78,
       "license": "NOASSERTION",
       "language": "JavaScript",
       "pushedAt": "2026-11-04T03:33:04Z",
       "archived": false,
-      "forks": 119,
-      "openIssues": 9
+      "forks": 118,
+      "openIssues": 8
     },
     {
       "id": "dsh-router-standard",
@@ -2020,7 +2020,7 @@
       ],
       "description": "Task-aware reasoning-mode router for DeepSeek Harness: three measured behavior bands (spec/mixed/react) with phase-transition evidence, persona + first-turn tool injection, agent-visible tuning. Dual-attractor policy paper included.",
       "summary": "任务感知推理模式路由",
-      "stars": 347,
+      "stars": 348,
       "matchScore": 78,
       "license": "MIT",
       "language": "JavaScript",
@@ -2040,13 +2040,13 @@
       ],
       "description": "Notes for you, Memory for your agents. / 内置 Deepseek harness Agent / 适用 办公 & 写作 & Coding",
       "summary": "笔记+记忆一体",
-      "stars": 496,
+      "stars": 500,
       "matchScore": 78,
       "license": "AGPL-3.0",
       "language": "TypeScript",
       "pushedAt": "2026-11-08T08:55:20Z",
       "archived": false,
-      "forks": 65,
+      "forks": 66,
       "openIssues": 21
     },
     {
@@ -2060,13 +2060,13 @@
       ],
       "description": "嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」—— 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 | EasyEDA Pro automation: the hands of your AI harness — typed schematic/PCB actions via CLI, Agent Skill and stdio MCP.",
       "summary": "嘉立创 EDA 自动化画板",
-      "stars": 987,
+      "stars": 1003,
       "matchScore": 77,
       "license": "NOASSERTION",
       "language": "Go",
       "pushedAt": "2026-11-08T15:37:46Z",
       "archived": false,
-      "forks": 119,
+      "forks": 121,
       "openIssues": 4
     },
     {
@@ -2080,7 +2080,7 @@
       ],
       "description": " 一套 DSH runtime，Desktop、Web 与 TUI 三种开发体验。",
       "summary": "一套 runtime，Desktop/Web/TUI 三态",
-      "stars": 322,
+      "stars": 323,
       "matchScore": 77,
       "license": "MIT",
       "language": "TypeScript",
@@ -2120,13 +2120,13 @@
       ],
       "description": "Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows.",
       "summary": "桌面大肥鱼伴侣，状态常驻",
-      "stars": 604,
+      "stars": 609,
       "matchScore": 77,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-10-29T07:19:09Z",
       "archived": false,
-      "forks": 53,
+      "forks": 54,
       "openIssues": 13
     },
     {
@@ -2140,13 +2140,13 @@
       ],
       "description": "DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus a streaming sidebar panel you can tap and drag on.",
       "summary": "iOS 模拟器插件",
-      "stars": 390,
+      "stars": 453,
       "matchScore": 77,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-09-24T21:40:18Z",
+      "pushedAt": "2026-11-10T02:48:39Z",
       "archived": false,
-      "forks": 35,
+      "forks": 41,
       "openIssues": 6
     },
     {
@@ -2160,11 +2160,11 @@
       ],
       "description": "dsh 安卓壳 APK——WebView UI + 内嵌 Termux 运行时快照（解压即跑），为dsh本地运行设计的高性能方案",
       "summary": "安卓壳 APK，内嵌 Termux",
-      "stars": 1058,
+      "stars": 1065,
       "matchScore": 77,
       "license": "MIT",
       "language": "Kotlin",
-      "pushedAt": "2026-11-08T18:46:20Z",
+      "pushedAt": "2026-11-10T05:05:43Z",
       "archived": false,
       "forks": 116,
       "openIssues": 36
@@ -2180,13 +2180,13 @@
       ],
       "description": "A visual, non-linear conversation workspace plugin for DeepSeek Harness ; A canvas-based session explorer and branching workspace for DeepSeek Harness.",
       "summary": "可视化非线性对话工作区",
-      "stars": 688,
+      "stars": 696,
       "matchScore": 77,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-11-04T06:48:36Z",
       "archived": false,
-      "forks": 65,
+      "forks": 66,
       "openIssues": 36
     },
     {
@@ -2200,7 +2200,7 @@
       ],
       "description": "WebGPU ocean skin for DeepSeek Harness — DSH plugin, Harness-only Chrome/Edge extension, static installer, and native integration.",
       "summary": "WebGPU 海洋皮肤",
-      "stars": 388,
+      "stars": 389,
       "matchScore": 77,
       "license": "MIT",
       "language": "JavaScript",
@@ -2220,14 +2220,14 @@
       ],
       "description": "DeepSeek Harness session cost meter plugin: session/daily cost, budget, history, OpenCode Go quota, official & custom-provider balance, Codex-like token heatmap, peak/off-peak pricing with pre-switch popup & system-notification alerts, official price sync, 90+ model pricing catalog, Coding Plan quota queries (7 vendors), bilingual zh/en UI",
       "summary": "会话/每日成本计量",
-      "stars": 652,
+      "stars": 662,
       "matchScore": 77,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-09T04:46:52Z",
+      "pushedAt": "2026-11-09T09:34:48Z",
       "archived": false,
-      "forks": 56,
-      "openIssues": 0
+      "forks": 55,
+      "openIssues": 1
     },
     {
       "id": "dsh-wallpaper-engine",
@@ -2240,14 +2240,14 @@
       ],
       "description": "把本机 Wallpaper Engine 的壁纸变成 DSH 网页界面的背景：Video 动态播放、Web 以 iframe 加载、Scene 壁纸提取主纹理作为静态帧；iOS 液态玻璃设置窗口（配色 / 玻璃颜色 / 透明度）、内容分级与类型过滤、自定义壁纸上传、紧凑 CD 架布局、黑胶唱片展示、隐藏 / 恢复、倍速 / 翻转与自动轮播。感谢 Jerry 维护 macOS 版。",
       "summary": "Wallpaper Engine 壁纸做背景",
-      "stars": 6038,
+      "stars": 6237,
       "matchScore": 77,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-09T01:23:00Z",
+      "pushedAt": "2026-11-10T05:11:14Z",
       "archived": false,
-      "forks": 108,
-      "openIssues": 35
+      "forks": 107,
+      "openIssues": 29
     },
     {
       "id": "oh-story-dsh",
@@ -2260,7 +2260,7 @@
       ],
       "description": "A DSH plugin for novel writing and short-drama production, powered by Oh Story and Drama Skills.",
       "summary": "小说与短剧创作",
-      "stars": 715,
+      "stars": 720,
       "matchScore": 77,
       "license": "MIT",
       "language": "Python",
@@ -2287,7 +2287,7 @@
       "pushedAt": "2026-11-03T12:57:13Z",
       "archived": false,
       "forks": 33,
-      "openIssues": 6
+      "openIssues": 7
     },
     {
       "id": "anime-find",
@@ -2320,14 +2320,14 @@
       ],
       "description": "The DeepSeek Harness plugin for OpenPencil — preview, inspect, and edit real .op documents inside a conversation.",
       "summary": "OpenPencil 插件，预览编辑 .op",
-      "stars": 231,
+      "stars": 242,
       "matchScore": 77,
       "license": "MIT",
       "language": "TypeScript",
       "pushedAt": "2026-10-28T18:08:20Z",
       "archived": false,
       "forks": 14,
-      "openIssues": 2
+      "openIssues": 3
     },
     {
       "id": "dsh-super-injector",
@@ -2380,14 +2380,14 @@
       ],
       "description": "DeepSeek Harness 移动端适配与安全访问插件，支持局域网、远程连接、Android App 和手机浏览器。",
       "summary": "移动端适配与安全访问",
-      "stars": 798,
+      "stars": 803,
       "matchScore": 76,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "pushedAt": "2026-11-08T14:28:39Z",
+      "pushedAt": "2026-11-09T19:00:36Z",
       "archived": false,
-      "forks": 68,
-      "openIssues": 24
+      "forks": 69,
+      "openIssues": 25
     },
     {
       "id": "dsh-liang-skin",
@@ -2400,7 +2400,7 @@
       ],
       "description": "DeepSeek Harness 滑动变阻器皮肤",
       "summary": "滑动变阻器皮肤",
-      "stars": 373,
+      "stars": 375,
       "matchScore": 76,
       "license": null,
       "language": "TypeScript",
@@ -2460,7 +2460,7 @@
       ],
       "description": "AI-assisted local creator workbench for DeepSeek Harness",
       "summary": "本地创作工作台",
-      "stars": 212,
+      "stars": 213,
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
@@ -2486,8 +2486,8 @@
       "language": "JavaScript",
       "pushedAt": "2026-08-16T00:02:38Z",
       "archived": false,
-      "forks": 9,
-      "openIssues": 9
+      "forks": 8,
+      "openIssues": 7
     },
     {
       "id": "dsh-auto-mode",
@@ -2540,7 +2540,7 @@
       ],
       "description": "DeepSeek Harness plugin for previewable cross-preset session migration. Fixed-schema handoffs preserve state, source-model intent, and unresolved images; the original session stays untouched.",
       "summary": "跨预设会话桥接",
-      "stars": 165,
+      "stars": 166,
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
@@ -2560,7 +2560,7 @@
       ],
       "description": "DSH crash-rescue plugin: undo config & plugin-code changes, secret-safe snapshots, one-click SAFE MODE, plus offline CLI/GUI that work even when DSH won't boot.",
       "summary": "崩溃救援：撤销配置与代码改动",
-      "stars": 202,
+      "stars": 201,
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
@@ -2620,7 +2620,7 @@
       ],
       "description": "Native local Taskboard plugin for DeepSeek Harness. SQLite-backed projects, Agent claim/review, and a native Web UI — no iframe, no second chat runtime.",
       "summary": "原生本地任务看板，SQLite",
-      "stars": 326,
+      "stars": 327,
       "matchScore": 76,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -2640,11 +2640,11 @@
       ],
       "description": "DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness",
       "summary": "Codex 风思考强度滑块",
-      "stars": 269,
+      "stars": 270,
       "matchScore": 76,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-05T15:10:45Z",
+      "pushedAt": "2026-11-09T13:26:52Z",
       "archived": false,
       "forks": 18,
       "openIssues": 5
@@ -2660,13 +2660,13 @@
       ],
       "description": "DeepSeek Harness plugin for Android — build, run, and interact with a live emulator or USB device stream inside a conversation, driven entirely through adb.",
       "summary": "Android 构建运行交互",
-      "stars": 273,
+      "stars": 347,
       "matchScore": 76,
       "license": "MIT",
       "language": "TypeScript",
       "pushedAt": "2026-10-08T09:30:51Z",
       "archived": false,
-      "forks": 26,
+      "forks": 35,
       "openIssues": 6
     },
     {
@@ -2680,14 +2680,14 @@
       ],
       "description": "Import 14+ external agent chat histories (Claude Code, Codex, ChatGPT, Cursor, Gemini, Reasonix, opencode, ZCode, Grok Build, OpenClaw, Pi, Hermes, Kimi CLI, DSH) into DeepSeek Harness as resumable sessions — full-fidelity, reverse export/sync, bundle backup. | 从 Claude Code、Codex、Reasonix 等 Agent 工具导入历史消息到 DeepSeek Harness 并继续对话。",
       "summary": "导入 14+ 外部 agent 对话",
-      "stars": 294,
+      "stars": 301,
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-06T08:33:47Z",
+      "pushedAt": "2026-11-10T05:48:47Z",
       "archived": false,
-      "forks": 43,
-      "openIssues": 3
+      "forks": 44,
+      "openIssues": 1
     },
     {
       "id": "dsh-univer-office",
@@ -2700,14 +2700,14 @@
       ],
       "description": "Preview, create, edit office spreadsheets, docs & slides inside DeepSeek Harness. Power by Univer.",
       "summary": "对话内预览编辑办公文档",
-      "stars": 699,
+      "stars": 706,
       "matchScore": 76,
       "license": "Apache-2.0",
       "language": "TypeScript",
       "pushedAt": "2026-11-03T09:06:43Z",
       "archived": false,
       "forks": 56,
-      "openIssues": 14
+      "openIssues": 15
     },
     {
       "id": "dsh-turn-rewind",
@@ -2726,7 +2726,7 @@
       "language": "JavaScript",
       "pushedAt": "2026-11-06T18:22:55Z",
       "archived": false,
-      "forks": 16,
+      "forks": 15,
       "openIssues": 4
     },
     {
@@ -2740,14 +2740,14 @@
       ],
       "description": "DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）",
       "summary": "Web 界面技能/MCP 管理",
-      "stars": 265,
+      "stars": 267,
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-05T15:02:54Z",
+      "pushedAt": "2026-11-09T10:54:08Z",
       "archived": false,
-      "forks": 25,
-      "openIssues": 12
+      "forks": 24,
+      "openIssues": 7
     },
     {
       "id": "dsh-webui-market-plugin",
@@ -2806,7 +2806,7 @@
       "language": "TypeScript",
       "pushedAt": "2026-11-03T04:49:26Z",
       "archived": false,
-      "forks": 13,
+      "forks": 12,
       "openIssues": 6
     },
     {
@@ -2820,11 +2820,11 @@
       ],
       "description": "Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported from pi-commandcode-provider.",
       "summary": "Command Code 模型供应商",
-      "stars": 468,
+      "stars": 470,
       "matchScore": 76,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-07T06:56:20Z",
+      "pushedAt": "2026-11-10T01:33:27Z",
       "archived": false,
       "forks": 32,
       "openIssues": 8
@@ -2900,14 +2900,14 @@
       ],
       "description": "DeepSeek Harness skin market 皮肤市场 已收录200+DSH 皮肤 完善评分系统加人工审核，有便捷的社区收录入口；有在线页面方便在线浏览，也有插件方便管理本地皮肤",
       "summary": "皮肤市场，200+ 皮肤",
-      "stars": 316,
+      "stars": 319,
       "matchScore": 76,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-09T00:27:46Z",
+      "pushedAt": "2026-11-10T02:11:05Z",
       "archived": false,
       "forks": 39,
-      "openIssues": 2
+      "openIssues": 3
     },
     {
       "id": "dsh-kun-like-pet",
@@ -3006,8 +3006,8 @@
       "language": "JavaScript",
       "pushedAt": "2026-11-09T02:50:37Z",
       "archived": false,
-      "forks": 8,
-      "openIssues": 7
+      "forks": 7,
+      "openIssues": 6
     },
     {
       "id": "dsh-automation",
@@ -3046,7 +3046,7 @@
       "language": "JavaScript",
       "pushedAt": "2026-09-01T01:00:44Z",
       "archived": false,
-      "forks": 13,
+      "forks": 14,
       "openIssues": 5
     },
     {
@@ -3060,13 +3060,13 @@
       ],
       "description": "Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack.",
       "summary": "逆向技能集 85 个 SKILL.md",
-      "stars": 338,
+      "stars": 341,
       "matchScore": 76,
       "license": "MIT",
       "language": "PowerShell",
       "pushedAt": "2026-10-08T09:10:26Z",
       "archived": false,
-      "forks": 44,
+      "forks": 46,
       "openIssues": 16
     },
     {
@@ -3086,8 +3086,8 @@
       "language": "JavaScript",
       "pushedAt": "2026-10-10T15:59:03Z",
       "archived": false,
-      "forks": 4,
-      "openIssues": 11
+      "forks": 3,
+      "openIssues": 10
     },
     {
       "id": "deepseek-harness-remote",
@@ -3100,14 +3100,14 @@
       ],
       "description": "基于 DeepSeek Harness 插件机制的多端远程访问方案，让桌面端与 Android 端安全连接并操作远程 Harness。（A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling desktop and Android clients to securely connect to and operate a remote Harness.）",
       "summary": "多端远程访问方案",
-      "stars": 2321,
+      "stars": 2461,
       "matchScore": 76,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-09T04:31:04Z",
+      "pushedAt": "2026-11-10T04:41:22Z",
       "archived": false,
-      "forks": 182,
-      "openIssues": 44
+      "forks": 188,
+      "openIssues": 43
     },
     {
       "id": "dsh-plugin-hub",
@@ -3124,9 +3124,9 @@
       "matchScore": 76,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-08T19:32:34Z",
+      "pushedAt": "2026-11-10T04:35:05Z",
       "archived": false,
-      "forks": 8,
+      "forks": 7,
       "openIssues": 0
     },
     {
@@ -3184,10 +3184,10 @@
       "matchScore": 75,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-09T00:09:56Z",
+      "pushedAt": "2026-11-10T02:13:46Z",
       "archived": false,
-      "forks": 6,
-      "openIssues": 8
+      "forks": 5,
+      "openIssues": 7
     },
     {
       "id": "deepseek-harness-control-center",
@@ -3246,7 +3246,7 @@
       "language": "JavaScript",
       "pushedAt": "2026-10-31T10:10:16Z",
       "archived": false,
-      "forks": 16,
+      "forks": 15,
       "openIssues": 7
     },
     {
@@ -3320,14 +3320,14 @@
       ],
       "description": "面向 AI 编程客户端的动态、可响应环境——视频背景、氛围场景与主题，适用于 DeepSeek Harness 与 Codex Desktop。",
       "summary": "动态视频背景与主题",
-      "stars": 106,
+      "stars": 109,
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-10-30T10:15:48Z",
       "archived": false,
       "forks": 7,
-      "openIssues": 1
+      "openIssues": 2
     },
     {
       "id": "dsh-green-meter",
@@ -3380,7 +3380,7 @@
       ],
       "description": "Bounded, layered, approval-gated, auditable cross-session memory for DeepSeek Harness (capability seam: ctx.memory + SQLite provider + memory tool + frozen snapshot injection)",
       "summary": "分层审批门控跨会话记忆",
-      "stars": 143,
+      "stars": 144,
       "matchScore": 75,
       "license": "Apache-2.0",
       "language": "JavaScript",
@@ -3400,7 +3400,7 @@
       ],
       "description": "deepseek-harness for vscode .This is a community project, and we welcome your valuable feedback!",
       "summary": "VS Code 集成",
-      "stars": 166,
+      "stars": 167,
       "matchScore": 75,
       "license": "MIT",
       "language": "TypeScript",
@@ -3460,14 +3460,14 @@
       ],
       "description": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイティブ体験、高い互換性、シンプルなトグル、充実した設定、モダンで軽量な UI。",
       "summary": "消息撤回重编辑",
-      "stars": 130,
+      "stars": 131,
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-11-06T23:34:46Z",
       "archived": false,
-      "forks": 15,
-      "openIssues": 3
+      "forks": 16,
+      "openIssues": 4
     },
     {
       "id": "dsh-multica-runtime",
@@ -3480,14 +3480,14 @@
       ],
       "description": "Support dsh runtime on Multica.",
       "summary": "Multica 上运行 DSH",
-      "stars": 77,
+      "stars": 78,
       "matchScore": 75,
       "license": null,
       "language": "TypeScript",
       "pushedAt": "2026-10-22T07:52:39Z",
       "archived": false,
-      "forks": 19,
-      "openIssues": 18
+      "forks": 20,
+      "openIssues": 19
     },
     {
       "id": "deepseek-harness-cli",
@@ -3520,14 +3520,14 @@
       ],
       "description": "Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed",
       "summary": "DuckDuckGo 免费搜索",
-      "stars": 1003,
+      "stars": 1031,
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-08T13:25:37Z",
+      "pushedAt": "2026-11-09T14:44:57Z",
       "archived": false,
       "forks": 64,
-      "openIssues": 4
+      "openIssues": 6
     },
     {
       "id": "dsh-balance-plugin",
@@ -3566,7 +3566,7 @@
       "language": "JavaScript",
       "pushedAt": "2026-08-16T05:24:58Z",
       "archived": false,
-      "forks": 6,
+      "forks": 5,
       "openIssues": 0
     },
     {
@@ -3600,13 +3600,13 @@
       ],
       "description": "DSH Web UI 移动端适配：窄屏好用，宽屏适用",
       "summary": "Web UI 移动端适配",
-      "stars": 182,
+      "stars": 185,
       "matchScore": 75,
       "license": "MIT",
       "language": "TypeScript",
       "pushedAt": "2026-11-08T14:00:39Z",
       "archived": false,
-      "forks": 39,
+      "forks": 38,
       "openIssues": 1
     },
     {
@@ -3624,7 +3624,7 @@
       "matchScore": 75,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-09T04:43:18Z",
+      "pushedAt": "2026-11-10T04:39:18Z",
       "archived": false,
       "forks": 4,
       "openIssues": 1
@@ -3640,14 +3640,14 @@
       ],
       "description": "DeepSeek Harness 的表情包插件——找得到、发得出、学得会，纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包 、多种风格随意切换。",
       "summary": "表情包插件，纯文本斗图",
-      "stars": 542,
+      "stars": 550,
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-11-09T03:52:40Z",
       "archived": false,
-      "forks": 10,
-      "openIssues": 1
+      "forks": 9,
+      "openIssues": 0
     },
     {
       "id": "dsh-openbiliclaw",
@@ -3666,7 +3666,7 @@
       "language": "JavaScript",
       "pushedAt": "2026-11-02T14:21:54Z",
       "archived": false,
-      "forks": 4,
+      "forks": 3,
       "openIssues": 0
     },
     {
@@ -3684,7 +3684,7 @@
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-06T10:58:44Z",
+      "pushedAt": "2026-11-09T15:23:00Z",
       "archived": false,
       "forks": 7,
       "openIssues": 7
@@ -3780,7 +3780,7 @@
       ],
       "description": "DSH 会话管理插件：删除（回收站恢复/彻底清除）、统计、继续/暂停、打开日志目录、对话顶部抽屉、工作区分组与排序、上下文压缩阈值设置。DSH session manager: delete with trash/restore/purge, stats, continue/pause, log folder, header drawer, workspace grouping, context compaction threshold.",
       "summary": "会话管理：删除统计分组",
-      "stars": 111,
+      "stars": 110,
       "matchScore": 75,
       "license": "MIT",
       "language": "TypeScript",
@@ -3800,14 +3800,14 @@
       ],
       "description": "DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 💬 语音识别（说完自动停·云端/本地双引擎）· 附 🔁 服务异常一键重启",
       "summary": "提示词增强+语音识别",
-      "stars": 126,
+      "stars": 125,
       "matchScore": 75,
       "license": "Apache-2.0",
       "language": "JavaScript",
       "pushedAt": "2026-11-07T15:09:04Z",
       "archived": false,
-      "forks": 14,
-      "openIssues": 0
+      "forks": 13,
+      "openIssues": 1
     },
     {
       "id": "dsh-remote",
@@ -3860,14 +3860,14 @@
       ],
       "description": "🖥️ Agent-project workbench for DeepSeek Harness — sidebar app drawer + dockable split workspace + a live control room watching every project.",
       "summary": "项目工作台，侧边栏",
-      "stars": 848,
+      "stars": 852,
       "matchScore": 75,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-10-31T09:06:12Z",
       "archived": false,
       "forks": 93,
-      "openIssues": 19
+      "openIssues": 17
     },
     {
       "id": "dsh-codex",
@@ -3980,7 +3980,7 @@
       ],
       "description": "Lark/Feishu IM bot channel for DeepSeek Harness | 飞书 DeepSeek Harness （DSH）插件",
       "summary": "飞书 IM 机器人通道",
-      "stars": 59,
+      "stars": 60,
       "matchScore": 75,
       "license": "BSD-3-Clause",
       "language": "TypeScript",
@@ -4000,13 +4000,13 @@
       ],
       "description": "DeepSeek Harness Tauri 桌面版 | Only 5mb installer, zero environment setup, preset plugins, Windows / macOS / Linux.",
       "summary": "Tauri 桌面版，5MB 安装包零环境",
-      "stars": 3539,
+      "stars": 3566,
       "matchScore": 72,
       "license": "MIT",
       "language": "TypeScript",
-      "pushedAt": "2026-11-09T04:12:47Z",
+      "pushedAt": "2026-11-10T01:29:02Z",
       "archived": false,
-      "forks": 233,
+      "forks": 237,
       "openIssues": 21
     },
     {
@@ -4020,13 +4020,13 @@
       ],
       "description": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
       "summary": "Codex 风 @文件引用",
-      "stars": 565,
+      "stars": 566,
       "matchScore": 72,
       "license": "MIT",
       "language": "JavaScript",
       "pushedAt": "2026-09-01T01:00:35Z",
       "archived": false,
-      "forks": 36,
+      "forks": 35,
       "openIssues": 12
     },
     {
@@ -4040,7 +4040,7 @@
       ],
       "description": "帮 DSH 搜索、安装并验证插件的 Skill｜A DSH skill that finds, installs, and verifies GitHub plugins",
       "summary": "会话内搜索安装验证插件",
-      "stars": 183,
+      "stars": 184,
       "matchScore": 72,
       "license": "BSD-3-Clause",
       "language": "JavaScript",
@@ -4064,9 +4064,9 @@
       "matchScore": 72,
       "license": "MIT",
       "language": "JavaScript",
-      "pushedAt": "2026-11-08T16:36:02Z",
+      "pushedAt": "2026-11-10T03:00:52Z",
       "archived": false,
-      "forks": 10,
+      "forks": 9,
       "openIssues": 4
     },
     {
@@ -4080,7 +4080,7 @@
       ],
       "description": "一款主打安全且更尊重开发者的开源 DeepSeek Harness 桌面客户端。官方 Web UI ，长任务常驻托盘，支持通知推送；内置安全市场，600+精选插件支持先审查、再安装。",
       "summary": "安全桌面客户端，长任务托盘",
-      "stars": 97,
+      "stars": 98,
       "matchScore": 72,
       "license": "MIT",
       "language": "JavaScript",
@@ -4100,14 +4100,14 @@
       ],
       "description": "DeepSeek Harness 插件市场 · 持续收录 1500+ DSH 插件：中文搜索 + 实用五维评分 + 一键安装。Web 版与 DSH 侧边栏插件双形态。Plugin marketplace for DeepSeek Harness: 1500+ plugins, Chinese search, 5-dim scoring, one-click install.",
       "summary": "1500+ 插件市场，五维评分",
-      "stars": 196,
+      "stars": 200,
       "matchScore": 72,
       "license": "NOASSERTION",
       "language": "TypeScript",
-      "pushedAt": "2026-11-08T23:55:59Z",
+      "pushedAt": "2026-11-10T03:11:35Z",
       "archived": false,
       "forks": 11,
-      "openIssues": 7
+      "openIssues": 10
     },
     {
       "id": "voyager",
@@ -4120,14 +4120,14 @@
       ],
       "description": "Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。",
       "summary": "多平台增强套件 + 提示词管理",
-      "stars": 20575,
+      "stars": 20581,
       "matchScore": 72,
       "license": "GPL-3.0",
       "language": "TypeScript",
       "pushedAt": "2026-11-09T00:01:03Z",
       "archived": false,
       "forks": 695,
-      "openIssues": 4
+      "openIssues": 1
     }
   ]
 }
